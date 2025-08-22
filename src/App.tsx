@@ -1,4 +1,6 @@
 import './App.css';
+import '@fontsource/stalinist-one';
+import '@fontsource/righteous';
 
 import About from './components/About/About';
 import Certificates from './components/Certificates/Certificates';
