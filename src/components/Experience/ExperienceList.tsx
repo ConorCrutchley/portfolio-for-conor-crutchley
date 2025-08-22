@@ -1,0 +1,15 @@
+import Experience from './Experience';
+import { experience } from '../../models/experience.model';
+
+const ExperienceList = () => {
+  return (
+    <section>
+      <h2>Experience</h2>
+      {experience.map((xp) => (
+        <Experience key={`experience_${xp.key}`} experience={xp} />
+      ))}
+    </section>
+  );
+};
+
+export default ExperienceList;
