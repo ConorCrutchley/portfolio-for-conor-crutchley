@@ -20,7 +20,11 @@ const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
           <strong>Course By: </strong>
           {certificate.provider}
         </p>
-        <a href={certificate.link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={certificate.certificateLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View Certificate
         </a>
       </div>
