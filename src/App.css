@@ -1,22 +1,42 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
 body {
   margin: 0;
   color: #fff;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #020917, #101725);
+  background-image: linear-gradient(to bottom, #3432c7, #101725);
+  background-attachment: fixed;
   font-family: 'Righteous', system-ui;
-}
-
-.content {
   display: flex;
   min-height: 100vh;
   line-height: 1.1;
-  text-align: center;
   flex-direction: column;
   justify-content: center;
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 700;
   font-family: 'Stalinist One', system-ui;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+section {
+  width: min(100%, 1500px);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #1c1c1ccc;
+}
+section p:last-of-type,
+section ul:last-of-type {
+  margin-bottom: 0;
+}
+img {
+  max-width: 200px;
 }

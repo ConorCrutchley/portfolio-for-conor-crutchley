@@ -3,6 +3,7 @@ import '@fontsource/stalinist-one';
 import '@fontsource/righteous';
 
 import About from '@/components/About/About';
+import Background from '@/components/Background';
 import Certificates from '@/components/Certificates/Certificates';
 import Contact from '@/components/Contact';
 import ExperienceList from '@/components/Experience/ExperienceList';
@@ -14,7 +15,8 @@ import Skills from '@/components/Skills/Skills';
 
 const App = () => {
   return (
-    <div className="content">
+    <>
+      <Background />
       <Navbar />
       <Hero />
       <About />
@@ -24,7 +26,7 @@ const App = () => {
       <Certificates />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 };
 
