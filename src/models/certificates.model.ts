@@ -1,26 +1,26 @@
 import type { IImageAttr } from './imageAttr.model';
-import SemrushBastianGrimmYellow from '../assets/course-thumbnails/semrush/semrush-bastian-grimm-yellow.webp';
-import SemrushBrianDeanGreen from '../assets/course-thumbnails/semrush/semrush-brian-dean-green.webp';
-import SemrushBrianDeanPink from '../assets/course-thumbnails/semrush/semrush-brian-dean-pink.webp';
-import SemrushCrystalCarterPink from '../assets/course-thumbnails/semrush/semrush-crystal-carter-pink.webp';
-import SemrushGregGiffordPink from '../assets/course-thumbnails/semrush/semrush-greg-gifford-pink.webp';
-import SemrushKevinIndigPink from '../assets/course-thumbnails/semrush/semrush-kevin-indig-pink.webp';
-import SemrushLogo from '../assets/semrush-logo.png';
-import SemrushMichaelOlayePurple from '../assets/course-thumbnails/semrush/semrush-michael-olaye-purple.webp';
-import SemrushWesMcDowellGreen from '../assets/course-thumbnails/semrush/semrush-wes-mcdowell-green.png';
-import UdemyAstroThumbnail from '../assets/course-thumbnails/udemy/udemy-astro-thumbnail.webp';
-import UdemyCSSDrawingThumbnail from '../assets/course-thumbnails/udemy/udemy-css-drawing-course-thumbnail.webp';
-import UdemyCleanCodeThumbnail from '../assets/course-thumbnails/udemy/udemy-clean-code-course-thumbnail.webp';
-import UdemyDesignRulesThumbnail from '../assets/course-thumbnails/udemy/udemy-design-rules-thumbnail.jpg';
-import UdemyGatsbyThumbnail from '../assets/course-thumbnails/udemy/udemy-gatsby-course-thumbnail.webp';
-import UdemyGitHubActionsThumbnail from '../assets/course-thumbnails/udemy/udemy-github-actions-course-thumbnail.webp';
-import UdemyLogo from '../assets/udemy-logo.png';
-import UdemyReactThumbnail from '../assets/course-thumbnails/udemy/udemy-react-course-thumbnail.webp';
-import UdemyTanStackThumbnail from '../assets/course-thumbnails/udemy/udemy-tanstack-thumbnail.webp';
-import UdemyTypeScriptThumbnail from '../assets/course-thumbnails/udemy/udemy-typescript-course-thumbnail.webp';
-import UdemyUnitTestingThumbnail from '../assets/course-thumbnails/udemy/udemy-javascript-unit-testing-thumbnail.webp';
+import SemrushBastianGrimmYellow from '@/assets/course-thumbnails/semrush/semrush-bastian-grimm-yellow.webp';
+import SemrushBrianDeanGreen from '@/assets/course-thumbnails/semrush/semrush-brian-dean-green.webp';
+import SemrushBrianDeanPink from '@/assets/course-thumbnails/semrush/semrush-brian-dean-pink.webp';
+import SemrushCrystalCarterPink from '@/assets/course-thumbnails/semrush/semrush-crystal-carter-pink.webp';
+import SemrushGregGiffordPink from '@/assets/course-thumbnails/semrush/semrush-greg-gifford-pink.webp';
+import SemrushKevinIndigPink from '@/assets/course-thumbnails/semrush/semrush-kevin-indig-pink.webp';
+import SemrushLogo from '@/assets/semrush-logo.png';
+import SemrushMichaelOlayePurple from '@/assets/course-thumbnails/semrush/semrush-michael-olaye-purple.webp';
+import SemrushWesMcDowellGreen from '@/assets/course-thumbnails/semrush/semrush-wes-mcdowell-green.png';
+import UdemyAstroThumbnail from '@/assets/course-thumbnails/udemy/udemy-astro-thumbnail.webp';
+import UdemyCSSDrawingThumbnail from '@/assets/course-thumbnails/udemy/udemy-css-drawing-course-thumbnail.webp';
+import UdemyCleanCodeThumbnail from '@/assets/course-thumbnails/udemy/udemy-clean-code-course-thumbnail.webp';
+import UdemyDesignRulesThumbnail from '@/assets/course-thumbnails/udemy/udemy-design-rules-thumbnail.jpg';
+import UdemyGatsbyThumbnail from '@/assets/course-thumbnails/udemy/udemy-gatsby-course-thumbnail.webp';
+import UdemyGitHubActionsThumbnail from '@/assets/course-thumbnails/udemy/udemy-github-actions-course-thumbnail.webp';
+import UdemyLogo from '@/assets/udemy-logo.png';
+import UdemyReactThumbnail from '@/assets/course-thumbnails/udemy/udemy-react-course-thumbnail.webp';
+import UdemyTanStackThumbnail from '@/assets/course-thumbnails/udemy/udemy-tanstack-thumbnail.webp';
+import UdemyTypeScriptThumbnail from '@/assets/course-thumbnails/udemy/udemy-typescript-course-thumbnail.webp';
+import UdemyUnitTestingThumbnail from '@/assets/course-thumbnails/udemy/udemy-javascript-unit-testing-thumbnail.webp';
 
-// import SemrushDMCYellow from "../assets/course-thumbnails/semrush/semrush-digital-marketing-certification-yellow.webp";
+// import SemrushDMCYellow from "@/assets/course-thumbnails/semrush/semrush-digital-marketing-certification-yellow.webp";
 
 export interface ICertificateGroup {
   group: string;

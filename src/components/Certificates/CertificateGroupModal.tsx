@@ -1,5 +1,5 @@
-import CertificateCard from './CertificateCard';
-import type { ICertificateGroup } from '../../models/certificates.model';
+import CertificateCard from '@/components/Certificates/CertificateCard';
+import type { ICertificateGroup } from '@/models/certificates.model';
 
 const CertificateGroupModal = ({
   certificateGroup,

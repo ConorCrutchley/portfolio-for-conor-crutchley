@@ -1,4 +1,4 @@
-import type { ISpecificSkill } from '../../models/skills.model';
+import type { ISpecificSkill } from '@/models/skills.model';
 
 const Skill = ({ specificSkill }: { specificSkill: ISpecificSkill }) => {
   return (

@@ -1,5 +1,5 @@
-import GitHubLogo from '../../assets/skill-logos/github.png';
-import type { IProject } from '../../models/projects.model';
+import GitHubLogo from '@/assets/skill-logos/github.png';
+import type { IProject } from '@/models/projects.model';
 
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (

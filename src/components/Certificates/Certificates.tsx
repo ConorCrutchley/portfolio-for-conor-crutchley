@@ -1,6 +1,6 @@
-import CertificateGroupModal from './CertificateGroupModal';
-import University from './University';
-import { certificateGroups } from '../../models/certificates.model';
+import { CertificateGroupModal, University } from '@/components/Certificates';
+
+import { certificateGroups } from '@/models/certificates.model';
 
 const Certificates = () => {
   return (

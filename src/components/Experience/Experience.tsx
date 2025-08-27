@@ -1,4 +1,4 @@
-import type { IExperience } from '../../models/experience.model';
+import type { IExperience } from '@/models/experience.model';
 
 const Experience = ({ experience }: { experience: IExperience }) => {
   const today = new Date();

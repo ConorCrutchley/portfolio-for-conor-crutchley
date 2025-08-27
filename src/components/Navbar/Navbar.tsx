@@ -1,7 +1,4 @@
-import Hamburger from './Hamburger';
-import Logo from './Logo';
-import PageLinks from './PageLinks';
-import SocialLinks from './SocialLinks';
+import { Hamburger, Logo, PageLinks, SocialLinks } from '@/components/Navbar';
 
 const Navbar = () => {
   return (

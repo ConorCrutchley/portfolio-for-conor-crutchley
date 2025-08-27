@@ -1,5 +1,5 @@
-import type { IImageAttr } from './imageAttr.model';
-import type { SpecificSkillTitles } from './skills.model';
+import type { IImageAttr } from '@/models/imageAttr.model';
+import type { SpecificSkillTitles } from '@/models/skills.model';
 
 export interface IProject {
   key: string;

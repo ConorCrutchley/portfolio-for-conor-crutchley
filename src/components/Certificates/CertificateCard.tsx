@@ -1,7 +1,7 @@
 import {
   certificatePlatforms,
   type ICertificate,
-} from '../../models/certificates.model';
+} from '@/models/certificates.model';
 
 const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
   const platform = certificatePlatforms[certificate.platform];

@@ -1,5 +1,5 @@
-import Experience from './Experience';
-import { experience } from '../../models/experience.model';
+import Experience from '@/components/Experience/Experience';
+import { experience } from '@/models/experience.model';
 
 const ExperienceList = () => {
   return (

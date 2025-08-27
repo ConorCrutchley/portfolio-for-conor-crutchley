@@ -1,5 +1,5 @@
-import Skill from './Skill';
-import { skills } from '../../models/skills.model';
+import Skill from '@/components/Skills/Skill';
+import { skills } from '@/models/skills.model';
 
 const Skills = () => {
   return (

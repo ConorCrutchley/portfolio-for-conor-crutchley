@@ -1,4 +1,4 @@
-import SkillsBlob from './SkillsBlob';
+import SkillsBlob from '@/components/Hero/SkillsBlob';
 
 const Hero = () => {
   return (

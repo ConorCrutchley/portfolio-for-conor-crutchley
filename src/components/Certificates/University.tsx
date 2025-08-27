@@ -1,4 +1,4 @@
-import StaffordshireUniversityLogo from '../../assets/staffordshire-university-square-logo.png';
+import StaffordshireUniversityLogo from '@/assets/staffordshire-university-square-logo.png';
 
 const University = () => {
   return (

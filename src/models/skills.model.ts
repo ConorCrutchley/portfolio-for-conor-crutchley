@@ -1,11 +1,11 @@
-import type { IImageAttr } from './imageAttr.model';
-import astroLogo from '../assets/skill-logos/astro.png';
-import azureLogo from '../assets/skill-logos/azure.png';
-import githubLogo from '../assets/skill-logos/github.png';
-import nextJsLogo from '../assets/skill-logos/next-js.png';
-import reactLogo from '../assets/skill-logos/react.png';
-import typescriptLogo from '../assets/skill-logos/typescript.png';
-import vsCodeLogo from '../assets/skill-logos/vs-code.png';
+import type { IImageAttr } from '@/models/imageAttr.model';
+import astroLogo from '@/assets/skill-logos/astro.png';
+import azureLogo from '@/assets/skill-logos/azure.png';
+import githubLogo from '@/assets/skill-logos/github.png';
+import nextJsLogo from '@/assets/skill-logos/next-js.png';
+import reactLogo from '@/assets/skill-logos/react.png';
+import typescriptLogo from '@/assets/skill-logos/typescript.png';
+import vsCodeLogo from '@/assets/skill-logos/vs-code.png';
 
 interface ISkill {
   key: string;
