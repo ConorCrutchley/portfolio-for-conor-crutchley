@@ -1,0 +1,14 @@
+.logo {
+  font-weight: 700;
+  font-family: 'Stalinist One', system-ui;
+  position: relative;
+}
+.logo img {
+  height: 5rem;
+}
+.logo span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,6 +1,6 @@
 import { Hamburger, Logo, PageLinks, SocialLinks } from '@/components/Navbar';
 
-import styles from '@/styles/navbar.module.css';
+import styles from '@/styles/navbar/navbar.module.css';
 
 const Navbar = () => {
   return (

@@ -1,5 +1,16 @@
+import GlitchBraces from '@/assets/portfolio-logo-glitching-braces.png';
+import styles from '@/styles/navbar/logo.module.css';
+
 const Logo = () => {
-  return <div>Logo</div>;
+  return (
+    <div className={styles.logo}>
+      <img
+        src={GlitchBraces}
+        alt="curly braces in a blue to violet gradient with a glitch effect"
+      />
+      <span>CC</span>
+    </div>
+  );
 };
 
 export default Logo;
