@@ -1,4 +1,70 @@
-.background svg {
-  position: absolute;
+.background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
+}
+.verticalPattern {
+  animation: scroll-pattern 15s linear infinite;
+}
+.verticalGroup {
+  fill: #b2627d;
+}
+.horizontalPattern {
+  animation: scroll-pattern 60s linear infinite;
+}
+.horizontalGroup {
+  fill: #3cd3de;
+  animation: h-color-change 11.5s ease-in-out infinite;
+}
+.horizontalGroup rect {
+  transform-origin: center;
+}
+.horizontalGroup rect:nth-of-type(odd) {
+  animation: h-scale-up 11.5s ease-in-out infinite;
+}
+.horizontalGroup rect:nth-of-type(even) {
+  animation: h-scale-down 11.5s ease-in-out infinite;
+}
+@keyframes h-color-change {
+  0%,
+  48.5%,
+  51%,
+  100% {
+    fill: #3cd3de;
+  }
+  50% {
+    fill: #b2627d;
+  }
+}
+@keyframes h-scale-up {
+  0%,
+  48.5%,
+  51%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes h-scale-down {
+  0%,
+  48.5%,
+  51%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.8);
+  }
+}
+@keyframes scroll-pattern {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -800px); /* tile height */
+  }
 }
