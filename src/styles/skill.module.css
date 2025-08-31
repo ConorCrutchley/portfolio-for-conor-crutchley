@@ -1,0 +1,39 @@
+.skill {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #3c3c3b99;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  padding: 1rem;
+  row-gap: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.skillImg {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+.skillPill,
+.skillPillFill {
+  border-radius: 1rem;
+}
+.skillPill {
+  background-color: #1c1c1ccc;
+  width: 100%;
+  position: relative;
+  line-height: 1.3rem;
+}
+.skillPillFill {
+  background: var(--highlight-gradient);
+  position: absolute;
+  inset: 0;
+  right: auto;
+  z-index: 0;
+}
+.skillPill span {
+  position: relative;
+  z-index: 1;
+}

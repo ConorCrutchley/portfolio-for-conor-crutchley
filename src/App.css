@@ -1,5 +1,14 @@
 * {
   box-sizing: border-box;
+  --highlight-gradient: linear-gradient(
+    45deg,
+    #3cd2de,
+    #5db7dd,
+    #6fa4dc,
+    #888bdb
+  );
+}
+html {
   font-size: 16px;
 }
 body {
@@ -27,6 +36,9 @@ h2 {
   font-size: 2.5rem;
   margin-top: 0;
 }
+h3 {
+  font-size: 1.5rem;
+}
 section {
   width: min(100%, 1500px);
   margin: 2rem auto;
@@ -40,4 +52,10 @@ section ul:last-of-type {
 }
 img {
   max-width: 200px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
 }

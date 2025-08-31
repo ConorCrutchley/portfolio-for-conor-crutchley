@@ -1,5 +1,5 @@
-import GitHubLogo from '@/assets/skill-logos/github.png';
 import type { IProject } from '@/models/projects.model';
+import githubLogo from '@/assets/skill-logos/github-logo.png';
 
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (
@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
       <p>{project.excerpt}</p>
       <div>
         <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-          <img src={GitHubLogo} alt="GitHub Logo" />
+          <img src={githubLogo} alt="GitHub Logo" />
         </a>
         <a href={project.siteLink} target="_blank" rel="noopener noreferrer">
           Visit Site

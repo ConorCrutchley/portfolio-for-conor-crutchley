@@ -5,16 +5,24 @@ const Skills = () => {
   return (
     <section>
       <h2>Skills</h2>
-      {skills.map((skill) => (
-        <div key={`skill_${skill.title}`}>
-          {skill.specificSkills.map((specificSkill) => (
-            <Skill
-              key={`skill_${skill.key}_${specificSkill.key}`}
-              specificSkill={specificSkill}
-            />
-          ))}
-        </div>
-      ))}
+      {skills.map((skill) => {
+        const orderedSpecificSkills = skill.specificSkills.sort(
+          (a, b) => b.level - a.level,
+        );
+        return (
+          <div key={`skill_${skill.title}`}>
+            <h3>{skill.title}</h3>
+            <div className="row">
+              {orderedSpecificSkills.map((specificSkill) => (
+                <Skill
+                  key={`skill_${skill.key}_${specificSkill.key}`}
+                  specificSkill={specificSkill}
+                />
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </section>
   );
 };
