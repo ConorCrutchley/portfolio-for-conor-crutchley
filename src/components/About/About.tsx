@@ -1,10 +1,11 @@
 import Profile from '@/components/About/Profile';
+import styles from '@/styles/about/about.module.css';
 
 const About = () => {
   return (
     <section>
       <h2>About Me</h2>
-      <div>
+      <div className={styles.about}>
         <div>
           <p>
             I am a hardworking front-end developer with over 10 years experience
@@ -22,7 +23,7 @@ const About = () => {
             service.
           </p>
         </div>
-        <div>
+        <div className={styles.aboutProfile}>
           <Profile />
           <button>Contact Me</button>
         </div>

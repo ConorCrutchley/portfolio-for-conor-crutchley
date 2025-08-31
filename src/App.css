@@ -58,12 +58,12 @@ button {
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  margin: 1rem 0;
   position: relative;
   z-index: 1;
   border-radius: 0.25rem;
   overflow: hidden;
   transition: transform 0.5s;
+  font-size: 1.2rem;
 }
 button::before {
   position: absolute;
@@ -99,7 +99,7 @@ button:hover::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2em;
+  gap: 2rem;
 }
 @keyframes rotate-gradient-background {
   from {

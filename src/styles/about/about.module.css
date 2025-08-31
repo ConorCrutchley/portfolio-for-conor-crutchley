@@ -1,0 +1,16 @@
+.about,
+.aboutProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 900px) {
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .aboutProfile {
+    margin-top: -21%;
+  }
+}
