@@ -2,11 +2,12 @@
   box-sizing: border-box;
   --highlight-gradient: linear-gradient(
     45deg,
-    #3cd2de,
-    #5db7dd,
-    #6fa4dc,
-    #888bdb
+    #3cd2de 20%,
+    #5db7dd 40%,
+    #6fa4dc 60%,
+    #888bdb 75%
   );
+  font-family: 'Righteous', system-ui;
 }
 html {
   font-size: 16px;
@@ -15,10 +16,8 @@ body {
   margin: 0;
   padding: 2rem;
   color: #fff;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   background-image: linear-gradient(to bottom, #3432c7, #101725);
   background-attachment: fixed;
-  font-family: 'Righteous', system-ui;
   display: flex;
   min-height: 100vh;
   line-height: 1.1;
@@ -53,9 +52,60 @@ section ul:last-of-type {
 img {
   max-width: 200px;
 }
+button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+button::before {
+  position: absolute;
+  content: '';
+  aspect-ratio: 1/1;
+  width: 110%;
+  transform-origin: center;
+  top: 50%;
+  left: 50%;
+  background: var(--highlight-gradient);
+  z-index: -1;
+  animation: rotate-gradient-background 5s ease-in-out infinite;
+}
+button::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.25rem;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%) rotate(-45deg);
+  background-color: #b2637d;
+  transition: transform 0.5s;
+  z-index: -1;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:hover::after {
+  transform: translateX(100%) rotate(-45deg);
+}
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 2em;
+}
+@keyframes rotate-gradient-background {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

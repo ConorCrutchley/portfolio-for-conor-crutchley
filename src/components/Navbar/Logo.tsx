@@ -8,7 +8,7 @@ const Logo = () => {
         src={GlitchBraces}
         alt="curly braces in a blue to violet gradient with a glitch effect"
       />
-      <span>CC</span>
+      <span className={styles.logoText}>CC</span>
     </div>
   );
 };

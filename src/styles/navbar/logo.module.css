@@ -1,12 +1,12 @@
 .logo {
   font-weight: 700;
-  font-family: 'Stalinist One', system-ui;
   position: relative;
 }
 .logo img {
   height: 5rem;
 }
-.logo span {
+.logoText {
+  font-family: 'Stalinist One', system-ui;
   position: absolute;
   top: 50%;
   left: 50%;
