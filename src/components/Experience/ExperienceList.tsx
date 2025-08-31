@@ -3,7 +3,7 @@ import { experience } from '@/models/experience.model';
 
 const ExperienceList = () => {
   return (
-    <section>
+    <section id="experience">
       <h2>Experience</h2>
       {experience.map((xp) => (
         <Experience key={`experience_${xp.key}`} experience={xp} />

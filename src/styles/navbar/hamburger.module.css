@@ -1,0 +1,38 @@
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.25rem;
+}
+.hamburger button {
+  aspect-ratio: 1/1;
+  padding: 0.75rem;
+}
+.hamburger button::before {
+  width: 140%;
+}
+.hamburger button span,
+.hamburger button span::before,
+.hamburger button span::after {
+  content: '';
+  width: 1.25rem;
+  height: 0.25rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 0.25rem;
+}
+.hamburger button span::before,
+.hamburger button span::after {
+  position: absolute;
+}
+.hamburger button span::before {
+  top: 0.75rem;
+}
+.hamburger button span::after {
+  bottom: 0.75rem;
+}
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}

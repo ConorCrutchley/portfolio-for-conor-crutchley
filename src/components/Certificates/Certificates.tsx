@@ -4,7 +4,7 @@ import { certificateGroups } from '@/models/certificates.model';
 
 const Certificates = () => {
   return (
-    <section>
+    <section id="certificates">
       <h2>Courses</h2>
       <University />
       <div>

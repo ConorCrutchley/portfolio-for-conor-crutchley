@@ -14,7 +14,7 @@ html {
 }
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 7rem 2rem 2rem;
   color: #fff;
   background-image: linear-gradient(to bottom, #3432c7, #101725);
   background-attachment: fixed;

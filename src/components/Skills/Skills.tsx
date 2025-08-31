@@ -3,7 +3,7 @@ import { skills } from '@/models/skills.model';
 
 const Skills = () => {
   return (
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       {skills.map((skill) => {
         const orderedSpecificSkills = skill.specificSkills.sort(
