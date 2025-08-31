@@ -5,27 +5,49 @@
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+.verticalPattern,
+.verticalOpauePattern,
+.horizontalPattern,
+.horizontalOpaquePattern {
+  animation-name: scroll-pattern;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 .verticalPattern {
-  animation: scroll-pattern 15s linear infinite;
+  animation-duration: 10s;
+}
+.verticalOpauePattern {
+  animation-duration: 15s;
 }
 .verticalGroup {
   fill: #b2627d;
 }
-.horizontalPattern {
-  animation: scroll-pattern 60s linear infinite;
+.horizontalPattern,
+.horizontalOpaquePattern {
+  animation-duration: 60s;
+}
+.horizontalGroup,
+.horizontalGroup rect {
+  animation-duration: 11.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .horizontalGroup {
   fill: #3cd3de;
-  animation: h-color-change 11.5s ease-in-out infinite;
+  animation-name: h-color-change;
 }
 .horizontalGroup rect {
   transform-origin: center;
 }
 .horizontalGroup rect:nth-of-type(odd) {
-  animation: h-scale-up 11.5s ease-in-out infinite;
+  animation-name: h-scale-up;
 }
 .horizontalGroup rect:nth-of-type(even) {
-  animation: h-scale-down 11.5s ease-in-out infinite;
+  animation-name: h-scale-down;
+}
+.horizontalOpaquePattern .horizontalGroup,
+.horizontalOpaquePattern .horizontalGroup rect {
+  animation-delay: 5.75s;
 }
 @keyframes h-color-change {
   0%,
