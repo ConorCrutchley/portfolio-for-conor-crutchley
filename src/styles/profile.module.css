@@ -1,0 +1,32 @@
+.profile {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  position: relative;
+}
+.profile::before {
+  background: var(--highlight-gradient);
+  content: '';
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 95%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: rotate-gradient-background 15s ease-in-out infinite;
+}
+.profile img {
+  max-width: 100%;
+  position: relative;
+  bottom: -1rem;
+}
+@keyframes rotate-gradient-background {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
