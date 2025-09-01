@@ -11,6 +11,12 @@
 .hamburger button::before {
   width: 140%;
 }
+.hamburger button::after {
+  width: 200%;
+}
+.hamburger button:hover::after {
+  transform: translateX(-100%) rotate(-45deg);
+}
 .hamburger button span,
 .hamburger button span::before,
 .hamburger button span::after {
@@ -31,6 +37,9 @@
 }
 .hamburger button span::after {
   transform: translateY(0.5rem) rotate(0deg);
+}
+.hamburger.open button::after {
+  transform: translateX(100%) rotate(-45deg);
 }
 .hamburger.open button span {
   transform: rotate(135deg);
