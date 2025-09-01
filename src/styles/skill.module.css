@@ -1,20 +1,20 @@
 .skill {
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
   background-color: #3c3c3b99;
   align-items: center;
   justify-content: space-between;
-  width: 130px;
-  padding: 1rem;
   row-gap: 0.5rem;
   text-align: center;
   font-size: 0.85rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 7rem;
 }
 .skillImg {
   object-fit: contain;
-  width: 100px;
-  height: 100px;
+  aspect-ratio: 1/1;
+  width: 5rem;
 }
 .skillPill,
 .skillPillFill {
@@ -36,4 +36,14 @@
 .skillPill span {
   position: relative;
   z-index: 1;
+}
+@media (min-width: 900px) {
+  .skill {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 8rem;
+  }
+  .skillImg {
+    width: 6rem;
+  }
 }
