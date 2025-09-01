@@ -3,17 +3,39 @@
   text-decoration: none;
   position: relative;
   text-transform: capitalize;
+  transition: color 0.3s;
 }
 .pagelinks a::before {
   content: '';
   position: absolute;
   width: 0px;
   height: 0.25rem;
-  background-color: #fff;
   bottom: -0.25rem;
   left: 50%;
   transform: translateX(-50%);
   transition: width 0.3s;
+  border-radius: 0.125rem;
+  background: var(--highlight-gradient);
+}
+.pagelinks a::after {
+  content: attr(data-text);
+  text-transform: capitalize;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background: var(--highlight-gradient);
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.pagelinks a:hover,
+.pagelinks a.active {
+  color: transparent;
+}
+.pagelinks a:hover::after,
+.pagelinks a.active::after {
+  opacity: 1;
 }
 .pagelinks a:hover::before,
 .pagelinks a.active::before {

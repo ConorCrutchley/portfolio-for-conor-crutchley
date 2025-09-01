@@ -55,6 +55,7 @@ const PageLinks = () => {
           <li key={`navbar_pagelink_${section}`}>
             <a
               href={`#${section}`}
+              data-text={section}
               className={activeSection === section ? styles.active : ''}
               onClick={(e) => {
                 e.preventDefault();
