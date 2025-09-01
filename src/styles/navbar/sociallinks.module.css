@@ -1,5 +1,82 @@
-.socialLinks a {
+.socialLinks li:nth-of-type(1) .icon {
+  clip-path: url(#clipPathLinkedIn);
+}
+.socialLinks li:nth-of-type(2) .icon {
+  clip-path: url(#clipPathGitHub);
+}
+.socialLinks li:nth-of-type(3) .icon {
+  clip-path: url(#clipPathFileDownload);
+  width: 1.6rem;
+}
+.socialLink {
+  position: relative;
+  display: block;
+}
+.icon {
   text-decoration: none;
-  color: #fff;
   font-size: 2rem;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  overflow: hidden;
+}
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  display: block;
+  transition: opacity 0.3s;
+}
+.icon::after {
+  background: var(--highlight-gradient);
+  opacity: 0;
+}
+.socialLink:hover .icon::before {
+  opacity: 0;
+}
+.socialLink:hover .icon::after {
+  opacity: 1;
+}
+.iconBottom {
+  position: absolute;
+  width: 0;
+  bottom: -0.5rem;
+  border-radius: 0.125rem;
+  height: 0.25rem;
+  background: var(--highlight-gradient);
+  transition: width 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.socialLink:hover .iconBottom {
+  width: 2rem;
+}
+.tooltip {
+  position: absolute;
+  bottom: -2.25rem;
+  background-color: #3c3c3b99;
+  padding: 0.25rem;
+  border-radius: 0.125rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fff;
+  font-size: 0.8rem;
+  width: 7rem;
+}
+.socialLinks li:nth-of-type(1) .tooltip {
+  left: 0;
+}
+.socialLinks li:nth-of-type(2) .tooltip {
+  width: 9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.socialLinks li:nth-of-type(3) .tooltip {
+  right: -0.25rem;
+}
+.socialLink:hover .tooltip {
+  opacity: 1;
 }
