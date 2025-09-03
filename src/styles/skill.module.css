@@ -1,7 +1,7 @@
 .skill {
   display: flex;
   flex-direction: column;
-  background-color: #3c3c3b99;
+  background-color: var(--mid-translucent-grey);
   align-items: center;
   justify-content: space-between;
   row-gap: 0.5rem;
@@ -21,7 +21,7 @@
   border-radius: 1rem;
 }
 .skill-pill {
-  background-color: #1c1c1ccc;
+  background-color: var(--dark-translucent-grey);
   width: 100%;
   position: relative;
   line-height: 1.3rem;

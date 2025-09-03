@@ -1,5 +1,5 @@
 .page-links a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   position: relative;
   text-transform: capitalize;

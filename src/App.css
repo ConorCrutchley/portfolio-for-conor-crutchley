@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  --dark-grey: #1c1c1cee;
+  --dark-translucent-grey: #1c1c1ccc;
+  --mid-translucent-grey: #3c3c3b99;
+  --text-color: #fff;
   --cyan: #3cd2de;
   --lilac: #888bdb;
   --highlight-gradient: linear-gradient(
@@ -17,7 +21,7 @@ html {
 body {
   margin: 0;
   padding: 7rem 2rem 2rem;
-  color: #fff;
+  color: var(--text-color);
   background-image: linear-gradient(to bottom, #3432c7, #101725);
   background-attachment: fixed;
   display: flex;
@@ -45,7 +49,7 @@ section {
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: #1c1c1ccc;
+  background-color: var(--dark-translucent-grey);
 }
 section p:last-of-type,
 section ul:last-of-type {
@@ -56,7 +60,7 @@ img {
 }
 button {
   background: transparent;
-  color: #fff;
+  color: var(--text-color);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
