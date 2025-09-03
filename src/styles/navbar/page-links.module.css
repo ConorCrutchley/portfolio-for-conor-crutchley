@@ -1,11 +1,11 @@
-.pagelinks a {
+.page-links a {
   color: #fff;
   text-decoration: none;
   position: relative;
   text-transform: capitalize;
   transition: color 0.3s;
 }
-.pagelinks a::before {
+.page-links a::before {
   content: '';
   position: absolute;
   width: 0px;
@@ -17,7 +17,7 @@
   border-radius: 0.125rem;
   background: var(--highlight-gradient);
 }
-.pagelinks a::after {
+.page-links a::after {
   content: attr(data-text);
   text-transform: capitalize;
   position: absolute;
@@ -29,15 +29,15 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
-.pagelinks a:hover,
-.pagelinks a.active {
+.page-links a:hover,
+.page-links a.active {
   color: transparent;
 }
-.pagelinks a:hover::after,
-.pagelinks a.active::after {
+.page-links a:hover::after,
+.page-links a.active::after {
   opacity: 1;
 }
-.pagelinks a:hover::before,
-.pagelinks a.active::before {
+.page-links a:hover::before,
+.page-links a.active::before {
   width: 100%;
 }

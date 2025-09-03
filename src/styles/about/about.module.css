@@ -1,5 +1,5 @@
 .about,
-.aboutProfile {
+.about-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: flex-start;
   }
-  .aboutProfile {
+  .about-profile {
     margin-top: -21%;
   }
 }

@@ -11,29 +11,29 @@
   padding: 0.5rem;
   width: 7rem;
 }
-.skillImg {
+.skill-img {
   object-fit: contain;
   aspect-ratio: 1/1;
   width: 5rem;
 }
-.skillPill,
-.skillPillFill {
+.skill-pill,
+.skill-pill-fill {
   border-radius: 1rem;
 }
-.skillPill {
+.skill-pill {
   background-color: #1c1c1ccc;
   width: 100%;
   position: relative;
   line-height: 1.3rem;
 }
-.skillPillFill {
+.skill-pill-fill {
   background: var(--highlight-gradient);
   position: absolute;
   inset: 0;
   right: auto;
   z-index: 0;
 }
-.skillPill span {
+.skill-pill span {
   position: relative;
   z-index: 1;
 }
@@ -43,7 +43,7 @@
     padding: 1rem;
     width: 8rem;
   }
-  .skillImg {
+  .skill-img {
     width: 6rem;
   }
 }

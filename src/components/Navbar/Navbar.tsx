@@ -6,9 +6,9 @@ import { useNavOpenStore } from '@/store/useNavOpenStore';
 const Navbar = () => {
   const { open } = useNavOpenStore();
   return (
-    <nav className={`${styles.navbar} ${open ? styles.open : ''}`}>
+    <nav className={`${styles['navbar']} ${open ? styles['open'] : ''}`}>
       <Logo />
-      <div className={styles.navLinks}>
+      <div className={styles['nav-links']}>
         <PageLinks />
         <SocialLinks />
       </div>

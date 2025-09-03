@@ -3,12 +3,12 @@ import styles from '@/styles/navbar/logo.module.css';
 
 const Logo = () => {
   return (
-    <div className={styles.logo}>
+    <div className={styles['logo']}>
       <img
         src={GlitchBraces}
         alt="curly braces in a blue to violet gradient with a glitch effect"
       />
-      <span className={styles.logoText}>CC</span>
+      <span className={styles['logo-text']}>CC</span>
     </div>
   );
 };

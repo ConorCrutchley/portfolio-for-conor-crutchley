@@ -9,16 +9,16 @@ const Skill = ({ specificSkill }: { specificSkill: ISpecificSkill }) => {
         ? 'Intermediate'
         : 'Advanced';
   return (
-    <div className={styles.skill}>
+    <div className={styles['skill']}>
       <img
         src={specificSkill.logo.src}
         alt={specificSkill.logo.alt}
-        className={styles.skillImg}
+        className={styles['skill-img']}
       />
       <p>{specificSkill.skill}</p>
-      <div className={styles.skillPill}>
+      <div className={styles['skill-pill']}>
         <div
-          className={styles.skillPillFill}
+          className={styles['skill-pill-fill']}
           style={{ width: `${specificSkill.level}%` }}
         ></div>
         <span>{levelWording}</span>

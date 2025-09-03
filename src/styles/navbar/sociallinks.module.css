@@ -1,14 +1,14 @@
-.socialLinks li:nth-of-type(1) .icon {
-  clip-path: url(#clipPathLinkedIn);
+.social-links li:nth-of-type(1) .icon {
+  clip-path: url(#clip-path-linkedin);
 }
-.socialLinks li:nth-of-type(2) .icon {
-  clip-path: url(#clipPathGitHub);
+.social-links li:nth-of-type(2) .icon {
+  clip-path: url(#clip-path-github);
 }
-.socialLinks li:nth-of-type(3) .icon {
-  clip-path: url(#clipPathFileDownload);
+.social-links li:nth-of-type(3) .icon {
+  clip-path: url(#clip-path-file-download);
   width: 1.6rem;
 }
-.socialLink {
+.social-link {
   position: relative;
   display: block;
 }
@@ -34,13 +34,13 @@
   background: var(--highlight-gradient);
   opacity: 0;
 }
-.socialLink:hover .icon::before {
+.social-link:hover .icon::before {
   opacity: 0;
 }
-.socialLink:hover .icon::after {
+.social-link:hover .icon::after {
   opacity: 1;
 }
-.iconBottom {
+.icon-bottom {
   position: absolute;
   width: 0;
   bottom: -0.5rem;
@@ -51,7 +51,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.socialLink:hover .iconBottom {
+.social-link:hover .icon-bottom {
   width: 2rem;
 }
 .tooltip {
@@ -66,17 +66,17 @@
   font-size: 0.8rem;
   width: 7rem;
 }
-.socialLinks li:nth-of-type(1) .tooltip {
+.social-links li:nth-of-type(1) .tooltip {
   left: 0;
 }
-.socialLinks li:nth-of-type(2) .tooltip {
+.social-links li:nth-of-type(2) .tooltip {
   width: 9rem;
   left: 50%;
   transform: translateX(-50%);
 }
-.socialLinks li:nth-of-type(3) .tooltip {
+.social-links li:nth-of-type(3) .tooltip {
   right: -0.25rem;
 }
-.socialLink:hover .tooltip {
+.social-link:hover .tooltip {
   opacity: 1;
 }

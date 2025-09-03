@@ -4,7 +4,7 @@ import { useNavOpenStore } from '@/store/useNavOpenStore';
 const Hamburger = () => {
   const { open, toggle } = useNavOpenStore();
   return (
-    <div className={`${styles.hamburger} ${open ? styles.open : ''}`}>
+    <div className={`${styles['hamburger']} ${open ? styles['open'] : ''}`}>
       <button onClick={toggle}>
         <span></span>
       </button>

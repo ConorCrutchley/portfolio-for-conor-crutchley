@@ -5,55 +5,55 @@
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-.verticalPattern,
-.horizontalPattern {
+.vertical-pattern,
+.horizontal-pattern {
   animation-name: scroll-pattern;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-.verticalPattern {
+.vertical-pattern {
   animation-duration: 10s;
 }
-.verticalOpauePattern {
+.vertical-opaue-pattern {
   animation-duration: 15s;
 }
-.verticalGroup {
+.vertical-group {
   fill: #b2627d;
 }
-.horizontalPattern {
+.horizontal-pattern {
   animation-duration: 40s;
 }
-.horizontalOpaquePattern {
+.horizontal-opaque-pattern {
   animation-duration: 60s;
 }
-.horizontalSecondaryPattern {
+.horizontal-secondary-pattern {
   animation-duration: 50s;
 }
-.horizontalGroup,
-.horizontalGroup rect {
+.horizontal-group,
+.horizontal-group rect {
   animation-duration: 11.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-.horizontalGroup {
+.horizontal-group {
   fill: #3cd3de;
   animation-name: h-color-change;
 }
-.horizontalGroup rect {
+.horizontal-group rect {
   transform-origin: center;
 }
-.horizontalGroup rect:nth-of-type(odd) {
+.horizontal-group rect:nth-of-type(odd) {
   animation-name: h-scale-up;
 }
-.horizontalGroup rect:nth-of-type(even) {
+.horizontal-group rect:nth-of-type(even) {
   animation-name: h-scale-down;
 }
-.horizontalOpaquePattern .horizontalGroup,
-.horizontalOpaquePattern .horizontalGroup rect {
+.horizontal-opaque-pattern .horizontal-group,
+.horizontal-opaque-pattern .horizontal-group rect {
   animation-delay: 5.75s;
 }
-.horizontalSecondaryPattern .horizontalGroup,
-.horizontalSecondaryPattern .horizontalGroup rect {
+.horizontal-secondary-pattern .horizontal-group,
+.horizontal-secondary-pattern .horizontal-group rect {
   animation-delay: 2.87s;
 }
 @keyframes h-color-change {

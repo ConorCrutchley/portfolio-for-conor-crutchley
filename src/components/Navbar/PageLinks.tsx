@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import navStyles from '@/styles/navbar/navbar.module.css';
-import styles from '@/styles/navbar/pagelinks.module.css';
+import styles from '@/styles/navbar/page-links.module.css';
 import { useNavOpenStore } from '@/store/useNavOpenStore';
 
 const PageLinks = () => {
@@ -49,14 +49,14 @@ const PageLinks = () => {
   });
 
   return (
-    <ul className={`${navStyles.navLinkUl} ${styles.pagelinks}`}>
+    <ul className={`${navStyles['nav-link-ul']} ${styles['page-links']}`}>
       {sections.map((section) => {
         return (
           <li key={`navbar_pagelink_${section}`}>
             <a
               href={`#${section}`}
               data-text={section}
-              className={activeSection === section ? styles.active : ''}
+              className={activeSection === section ? styles['active'] : ''}
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(section);

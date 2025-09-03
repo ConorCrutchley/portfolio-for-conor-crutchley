@@ -7,17 +7,17 @@ const Background = () => {
       width="100%"
       height="100%"
       preserveAspectRatio="none"
-      className={styles.background}
+      className={styles['background']}
     >
       <defs>
         <pattern
-          id="verticalOpaqueLines"
-          className={`${styles.verticalPattern} ${styles.verticalOpauePattern}`}
+          id="vertical-opaque-lines"
+          className={`${styles['vertical-pattern']} ${styles['vertical-opaue-pattern']}`}
           width="800"
           height="800"
           patternUnits="userSpaceOnUse"
         >
-          <g className={styles.verticalGroup}>
+          <g className={styles['vertical-group']}>
             <rect
               width={431}
               height={3}
@@ -57,13 +57,13 @@ const Background = () => {
           </g>
         </pattern>
         <pattern
-          id="verticalLines"
-          className={styles.verticalPattern}
+          id="vertical-lines"
+          className={styles['vertical-pattern']}
           width="800"
           height="800"
           patternUnits="userSpaceOnUse"
         >
-          <g className={styles.verticalGroup}>
+          <g className={styles['vertical-group']}>
             <rect
               width={547}
               height={3}
@@ -109,7 +109,6 @@ const Background = () => {
               rx={1.5}
               transform="rotate(90 592 522)"
             />
-
             <rect
               width={245}
               height={3}
@@ -146,7 +145,6 @@ const Background = () => {
               rx={1.5}
               transform="rotate(90 119 316)"
             />
-
             <rect
               width={330}
               height={3}
@@ -159,13 +157,13 @@ const Background = () => {
           </g>
         </pattern>
         <pattern
-          id="horizontalOpaqueLines"
-          className={`${styles.horizontalPattern} ${styles.horizontalOpaquePattern}`}
+          id="horizontal-opaque-lines"
+          className={`${styles['horizontal-pattern']} ${styles['horizontal-opaque-pattern']}`}
           width="800"
           height="800"
           patternUnits="userSpaceOnUse"
         >
-          <g className={styles.horizontalGroup}>
+          <g className={styles['horizontal-group']}>
             <rect
               width={81}
               height={6}
@@ -217,13 +215,13 @@ const Background = () => {
           </g>
         </pattern>
         <pattern
-          id="horizontalSecondaryLines"
-          className={`${styles.horizontalPattern} ${styles.horizontalSecondaryPattern}`}
+          id="horizontal-secondary-lines"
+          className={`${styles['horizontal-pattern']} ${styles['horizontal-secondary-pattern']}`}
           width="800"
           height="800"
           patternUnits="userSpaceOnUse"
         >
-          <g className={styles.horizontalGroup}>
+          <g className={styles['horizontal-group']}>
             <rect width={39} height={6} x={20.5} y={174} opacity={0.7} rx={3} />
             <rect width={42} height={6} x={40} y={440} opacity={0.57} rx={3} />
             <rect
@@ -300,13 +298,13 @@ const Background = () => {
           </g>
         </pattern>
         <pattern
-          id="horizontalLines"
-          className={styles.horizontalPattern}
+          id="horizontal-lines"
+          className={styles['horizontal-pattern']}
           width="800"
           height="800"
           patternUnits="userSpaceOnUse"
         >
-          <g className={styles.horizontalGroup}>
+          <g className={styles['horizontal-group']}>
             <rect width={52} height={6} x={26} y={340} opacity={0.95} rx={3} />
             <rect width={56} height={6} x={47} y={539} opacity={0.78} rx={3} />
             <rect width={52} height={6} x={135} y={143} opacity={0.77} rx={3} />
@@ -366,11 +364,15 @@ const Background = () => {
       </defs>
 
       {/* Full screen rect that uses the repeating pattern */}
-      <rect width="100%" height="100%" fill="url(#verticalOpaqueLines)" />
-      <rect width="100%" height="100%" fill="url(#verticalLines)" />
-      <rect width="100%" height="100%" fill="url(#horizontalOpaqueLines)" />
-      <rect width="100%" height="100%" fill="url(#horizontalSecondaryLines)" />
-      <rect width="100%" height="100%" fill="url(#horizontalLines)" />
+      <rect width="100%" height="100%" fill="url(#vertical-opaque-lines)" />
+      <rect width="100%" height="100%" fill="url(#vertical-lines)" />
+      <rect width="100%" height="100%" fill="url(#horizontal-opaque-lines)" />
+      <rect
+        width="100%"
+        height="100%"
+        fill="url(#horizontal-secondary-lines)"
+      />
+      <rect width="100%" height="100%" fill="url(#horizontal-lines)" />
     </svg>
   );
 };
