@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  --cyan: #3cd2de;
+  --lilac: #888bdb;
   --highlight-gradient: linear-gradient(
     45deg,
-    #3cd2de 20%,
+    var(--cyan) 20%,
     #5db7dd 40%,
     #6fa4dc 60%,
-    #888bdb 75%
+    var(--lilac) 75%
   );
   font-family: 'Righteous', system-ui;
 }
