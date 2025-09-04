@@ -45,7 +45,7 @@
   text-align: center;
 }
 .nav-links,
-.nav-link-ul:first-of-type {
+.nav-link-ul:first-of-type:not(:last-of-type) {
   flex-direction: column;
 }
 @media (min-width: 900px) {

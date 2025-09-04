@@ -20,7 +20,7 @@ html {
 }
 body {
   margin: 0;
-  padding: 7rem 2rem 2rem;
+  padding: 7rem 2rem 0rem;
   color: var(--text-color);
   background-image: linear-gradient(to bottom, #3432c7, #101725);
   background-attachment: fixed;

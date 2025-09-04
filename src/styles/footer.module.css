@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-translucent-grey);
+  padding: 1rem 2rem;
+  gap: 2rem;
+  position: relative;
+  left: -2rem;
+  right: -2rem;
+  width: calc(100% + 4rem);
+}
