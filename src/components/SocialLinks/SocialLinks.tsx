@@ -1,5 +1,5 @@
 import navStyles from '@/styles/navbar/navbar.module.css';
-import styles from '@/styles/navbar/sociallinks.module.css';
+import styles from '@/styles/navbar/social-links.module.css';
 
 const SocialLinks = () => {
   return (

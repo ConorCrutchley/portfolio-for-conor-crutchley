@@ -61,7 +61,7 @@
     height: auto;
   }
   .nav-links,
-  .nav-link-ul:first-of-type {
+  .nav-link-ul:first-of-type:not(:last-of-type) {
     flex-direction: row;
   }
   .nav-link-ul:first-of-type {
