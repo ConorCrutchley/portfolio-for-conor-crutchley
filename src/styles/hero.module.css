@@ -9,6 +9,11 @@
     flex-direction: row;
   }
   .hero-text {
+    width: calc(100% - 500px);
+  }
+}
+@media (min-width: 1180px) {
+  .hero-text {
     width: calc(100% - 582px);
   }
 }

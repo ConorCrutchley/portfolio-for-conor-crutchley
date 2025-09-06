@@ -68,6 +68,14 @@
     width: 80%;
   }
   .nav-link-ul:last-of-type {
-    width: 10%;
+    width: min(11rem, 15%);
+  }
+  .nav-link-ul {
+    gap: 1rem;
+  }
+}
+@media (min-width: 1180px) {
+  .nav-link-ul {
+    gap: 2rem;
   }
 }
