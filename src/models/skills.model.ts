@@ -1,37 +1,6 @@
+import * as logos from '@/models/skillLogos.model';
+
 import type { IImageAttr } from '@/models/imageAttr.model';
-import astroLogo from '@/assets/skill-logos/astro.png';
-import azureLogo from '@/assets/skill-logos/azure.png';
-import cSharpLogo from '@/assets/skill-logos/c-sharp-logo.png';
-import cicdPipelinesLogo from '@/assets/skill-logos/ci-cd-pipelines-logo.png';
-import crossBrowserLogo from '@/assets/skill-logos/cross-browser-testing-logo.png';
-import cssLogo from '@/assets/skill-logos/css3-logo.png';
-import devopsLogo from '@/assets/skill-logos/azure-devops-logo.png';
-import directusLogo from '@/assets/skill-logos/directus-logo.png';
-import dotNetLogo from '@/assets/skill-logos/dotnet-logo.png';
-import entityFrameworkLogo from '@/assets/skill-logos/entity-framework.png';
-import gatsbyLogo from '@/assets/skill-logos/gastby-icon.png';
-import gitLogo from '@/assets/skill-logos/git-logo.png';
-import githubLogo from '@/assets/skill-logos/github-logo.png';
-import htmlLogo from '@/assets/skill-logos/html5-logo.png';
-import jsLogo from '@/assets/skill-logos/javascript-logo.png';
-import lighthouseLogo from '@/assets/skill-logos/google-lighthouse-logo.png';
-import muiLogo from '@/assets/skill-logos/mui-logo.png';
-import mysqlLogo from '@/assets/skill-logos/mysql-logo-png.png';
-import nextJsLogo from '@/assets/skill-logos/next-js-icon-logo.png';
-import phpLogo from '@/assets/skill-logos/php-logo.png';
-import reactLogo from '@/assets/skill-logos/react.png';
-import restLogo from '@/assets/skill-logos/rest-api.png';
-import seoLogo from '@/assets/skill-logos/seo-search-engine-optimization-logo.png';
-import shadcnLogo from '@/assets/skill-logos/shadcn-logo.png';
-import sqlLogo from '@/assets/skill-logos/sql-logo.png';
-import structuredDataLogo from '@/assets/skill-logos/curly-braces.png';
-import tailwindLogo from '@/assets/skill-logos/tailwind-css-logo.png';
-import tanstackLogo from '@/assets/skill-logos/tanstack-logo.png';
-import typescriptLogo from '@/assets/skill-logos/typescript.png';
-import visualBasicLogo from '@/assets/skill-logos/visual-basic.png';
-import visualStudioLogo from '@/assets/skill-logos/visual-studio.png';
-import vsCodeLogo from '@/assets/skill-logos/vs-code.png';
-import wordpressLogo from '@/assets/skill-logos/wordpress-icon-logo.png';
 
 interface ISkill {
   key: string;
@@ -91,7 +60,7 @@ export const skills: ISkill[] = [
         skill: 'React',
         level: 85,
         logo: {
-          src: reactLogo,
+          src: logos.reactLogo,
           alt: 'React Logo',
         },
       },
@@ -100,7 +69,7 @@ export const skills: ISkill[] = [
         skill: 'TypeScript',
         level: 90,
         logo: {
-          src: typescriptLogo,
+          src: logos.typescriptLogo,
           alt: 'TypeScript Logo',
         },
       },
@@ -109,7 +78,7 @@ export const skills: ISkill[] = [
         skill: 'HTML5',
         level: 100,
         logo: {
-          src: htmlLogo,
+          src: logos.htmlLogo,
           alt: 'HTML Logo',
         },
       },
@@ -118,7 +87,7 @@ export const skills: ISkill[] = [
         skill: 'CSS3',
         level: 100,
         logo: {
-          src: cssLogo,
+          src: logos.cssLogo,
           alt: 'CSS Logo',
         },
       },
@@ -127,7 +96,7 @@ export const skills: ISkill[] = [
         skill: 'JavaScript',
         level: 100,
         logo: {
-          src: jsLogo,
+          src: logos.jsLogo,
           alt: 'JavaScript Logo',
         },
       },
@@ -136,7 +105,7 @@ export const skills: ISkill[] = [
         skill: 'Gatsby.js',
         level: 85,
         logo: {
-          src: gatsbyLogo,
+          src: logos.gatsbyLogo,
           alt: 'Gatsby Logo',
         },
       },
@@ -145,7 +114,7 @@ export const skills: ISkill[] = [
         skill: 'Next.js',
         level: 50,
         logo: {
-          src: nextJsLogo,
+          src: logos.nextJsLogo,
           alt: 'Next.js Logo',
         },
       },
@@ -154,7 +123,7 @@ export const skills: ISkill[] = [
         skill: 'Astro.js',
         level: 30,
         logo: {
-          src: astroLogo,
+          src: logos.astroLogo,
           alt: 'Astro.js Logo',
         },
       },
@@ -163,7 +132,7 @@ export const skills: ISkill[] = [
         skill: 'TanStack Start',
         level: 35,
         logo: {
-          src: tanstackLogo,
+          src: logos.tanstackLogo,
           alt: 'TanStack Start Logo',
         },
       },
@@ -172,7 +141,7 @@ export const skills: ISkill[] = [
         skill: 'MUI',
         level: 50,
         logo: {
-          src: muiLogo,
+          src: logos.muiLogo,
           alt: 'MUI Logo',
         },
       },
@@ -181,7 +150,7 @@ export const skills: ISkill[] = [
         skill: 'Shadcn',
         level: 25,
         logo: {
-          src: shadcnLogo,
+          src: logos.shadcnLogo,
           alt: 'Shadcn Logo',
         },
       },
@@ -190,7 +159,7 @@ export const skills: ISkill[] = [
         skill: 'Tailwind',
         level: 25,
         logo: {
-          src: tailwindLogo,
+          src: logos.tailwindLogo,
           alt: 'Tailwind Logo',
         },
       },
@@ -205,7 +174,7 @@ export const skills: ISkill[] = [
         skill: 'C#',
         level: 80,
         logo: {
-          src: cSharpLogo,
+          src: logos.cSharpLogo,
           alt: 'C# Logo',
         },
       },
@@ -214,7 +183,7 @@ export const skills: ISkill[] = [
         skill: 'Visual Basic',
         level: 70,
         logo: {
-          src: visualBasicLogo,
+          src: logos.visualBasicLogo,
           alt: 'Visual Basic Logo',
         },
       },
@@ -223,7 +192,7 @@ export const skills: ISkill[] = [
         skill: '.Net',
         level: 60,
         logo: {
-          src: dotNetLogo,
+          src: logos.dotNetLogo,
           alt: '.Net Logo',
         },
       },
@@ -232,7 +201,7 @@ export const skills: ISkill[] = [
         skill: 'Entity Framework',
         level: 50,
         logo: {
-          src: entityFrameworkLogo,
+          src: logos.entityFrameworkLogo,
           alt: 'Entity Framework Logo',
         },
       },
@@ -241,7 +210,7 @@ export const skills: ISkill[] = [
         skill: 'SQL',
         level: 60,
         logo: {
-          src: sqlLogo,
+          src: logos.sqlLogo,
           alt: 'SQL Logo',
         },
       },
@@ -250,7 +219,7 @@ export const skills: ISkill[] = [
         skill: 'PHP',
         level: 70,
         logo: {
-          src: phpLogo,
+          src: logos.phpLogo,
           alt: 'PHP Logo',
         },
       },
@@ -259,7 +228,7 @@ export const skills: ISkill[] = [
         skill: 'MySQL',
         level: 60,
         logo: {
-          src: mysqlLogo,
+          src: logos.mysqlLogo,
           alt: 'MySQL Logo',
         },
       },
@@ -274,7 +243,7 @@ export const skills: ISkill[] = [
         skill: 'Git',
         level: 80,
         logo: {
-          src: gitLogo,
+          src: logos.gitLogo,
           alt: 'Git Logo',
         },
       },
@@ -283,7 +252,7 @@ export const skills: ISkill[] = [
         skill: 'GitHub/GitHub Actions',
         level: 80,
         logo: {
-          src: githubLogo,
+          src: logos.githubLogo,
           alt: 'GitHub Logo',
         },
       },
@@ -292,7 +261,7 @@ export const skills: ISkill[] = [
         skill: 'Azure',
         level: 70,
         logo: {
-          src: azureLogo,
+          src: logos.azureLogo,
           alt: 'Azure Logo',
         },
       },
@@ -301,7 +270,7 @@ export const skills: ISkill[] = [
         skill: 'Azure DevOps',
         level: 60,
         logo: {
-          src: devopsLogo,
+          src: logos.devopsLogo,
           alt: 'Azure Logo',
         },
       },
@@ -310,7 +279,7 @@ export const skills: ISkill[] = [
         skill: 'CI/CD Pipelines',
         level: 80,
         logo: {
-          src: cicdPipelinesLogo,
+          src: logos.cicdPipelinesLogo,
           alt: 'CI/CD Logo',
         },
       },
@@ -320,7 +289,7 @@ export const skills: ISkill[] = [
         skill: 'VS Code',
         level: 100,
         logo: {
-          src: vsCodeLogo,
+          src: logos.vsCodeLogo,
           alt: 'VS Code Logo',
         },
       },
@@ -329,7 +298,7 @@ export const skills: ISkill[] = [
         skill: 'Visual Studio',
         level: 100,
         logo: {
-          src: visualStudioLogo,
+          src: logos.visualStudioLogo,
           alt: 'Visual Studio Logo',
         },
       },
@@ -338,7 +307,7 @@ export const skills: ISkill[] = [
         skill: 'Lighthouse',
         level: 100,
         logo: {
-          src: lighthouseLogo,
+          src: logos.lighthouseLogo,
           alt: 'Lighthouse Logo',
         },
       },
@@ -353,7 +322,7 @@ export const skills: ISkill[] = [
         skill: 'Directus',
         level: 80,
         logo: {
-          src: directusLogo,
+          src: logos.directusLogo,
           alt: 'Directus Logo',
         },
       },
@@ -362,7 +331,7 @@ export const skills: ISkill[] = [
         skill: 'WordPress',
         level: 80,
         logo: {
-          src: wordpressLogo,
+          src: logos.wordpressLogo,
           alt: 'WordPress Logo',
         },
       },
@@ -371,7 +340,7 @@ export const skills: ISkill[] = [
         skill: 'REST APIs',
         level: 100,
         logo: {
-          src: restLogo,
+          src: logos.restLogo,
           alt: 'REST Logo',
         },
       },
@@ -380,7 +349,7 @@ export const skills: ISkill[] = [
         skill: 'SEO',
         level: 90,
         logo: {
-          src: seoLogo,
+          src: logos.seoLogo,
           alt: 'SEO Logo',
         },
       },
@@ -389,7 +358,7 @@ export const skills: ISkill[] = [
         skill: 'Structured Data',
         level: 100,
         logo: {
-          src: structuredDataLogo,
+          src: logos.structuredDataLogo,
           alt: 'Structured Data Logo',
         },
       },
@@ -398,7 +367,7 @@ export const skills: ISkill[] = [
         skill: 'Cross Browser Compatibility',
         level: 60,
         logo: {
-          src: crossBrowserLogo,
+          src: logos.crossBrowserLogo,
           alt: 'Cross Browser Compatibility Logo',
         },
       },
