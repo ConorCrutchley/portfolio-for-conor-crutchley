@@ -1,4 +1,4 @@
-import SocialLinkCipPaths from './SocialLinkCipPaths';
+import SocialLinkClipPaths from './SocialLinkClipPaths';
 import SocialLinks from './SocialLinks';
 
-export { SocialLinkCipPaths, SocialLinks };
+export { SocialLinkClipPaths, SocialLinks };

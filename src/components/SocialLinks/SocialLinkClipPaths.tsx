@@ -1,4 +1,4 @@
-const SocialLinkCipPaths = () => {
+const SocialLinkClipPaths = () => {
   return (
     <svg
       width="0"
@@ -20,4 +20,4 @@ const SocialLinkCipPaths = () => {
   );
 };
 
-export default SocialLinkCipPaths;
+export default SocialLinkClipPaths;

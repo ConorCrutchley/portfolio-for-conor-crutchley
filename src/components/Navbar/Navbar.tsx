@@ -1,5 +1,5 @@
 import { Hamburger, Logo, PageLinks } from '@/components/Navbar';
-import { SocialLinkCipPaths, SocialLinks } from '@/components/SocialLinks';
+import { SocialLinkClipPaths, SocialLinks } from '@/components/SocialLinks';
 
 import styles from '@/styles/navbar/navbar.module.css';
 import { useNavOpenStore } from '@/store/useNavOpenStore';
@@ -11,7 +11,7 @@ const Navbar = () => {
       <Logo />
       <div className={styles['nav-links']}>
         <PageLinks />
-        <SocialLinkCipPaths />
+        <SocialLinkClipPaths />
         <SocialLinks />
       </div>
       <Hamburger />
