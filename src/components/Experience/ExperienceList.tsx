@@ -9,9 +9,12 @@ const ExperienceList = () => {
       <div className={styles['experience-list']}>
         <div className={styles['experience-list-items']}>
           {experience.map((xp) => (
-            <div className={styles['experience-list-item']}>
+            <div
+              key={`experience_${xp.key}`}
+              className={styles['experience-list-item']}
+            >
               <div className={styles['experience-list-item-bullet']}></div>
-              <Experience key={`experience_${xp.key}`} experience={xp} />
+              <Experience experience={xp} />
             </div>
           ))}
         </div>
