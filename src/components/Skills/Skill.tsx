@@ -10,11 +10,7 @@ const Skill = ({ specificSkill }: { specificSkill: ISpecificSkill }) => {
         : 'Advanced';
   return (
     <div className={styles['skill']}>
-      <img
-        src={specificSkill.logo.src}
-        alt={specificSkill.logo.alt}
-        className={styles['skill-img']}
-      />
+      <img {...specificSkill.logo} className={styles['skill-img']} />
       <p>{specificSkill.skill}</p>
       <div className={styles['skill-pill']}>
         <div

@@ -1,5 +1,5 @@
 import SkillsBlob from '@/components/Hero/SkillsBlob';
-import styles from '@/styles/hero.module.css';
+import styles from '@/styles/hero/hero.module.css';
 
 const Hero = () => {
   return (
