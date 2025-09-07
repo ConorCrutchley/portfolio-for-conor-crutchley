@@ -84,24 +84,6 @@
   animation-name: skill-opacity, skill-scale, skill-seo;
   animation-delay: 5s;
 }
-#blob-skill-logo-javascript {
-  top: 24%;
-  left: 39%;
-  animation-name: skill-opacity, skill-scale, skill-javascript;
-  animation-delay: 15.6s;
-}
-#blob-skill-logo-sql {
-  top: 42%;
-  left: 32%;
-  animation-name: skill-opacity, skill-scale, skill-sql;
-  animation-delay: 15s;
-}
-#blob-skill-logo-php {
-  top: 30%;
-  left: 54%;
-  animation-name: skill-opacity, skill-scale, skill-php;
-  animation-delay: 15.3s;
-}
 #blob-skill-logo-csharp {
   top: 18%;
   left: 33%;
@@ -120,7 +102,77 @@
   animation-name: skill-opacity, skill-scale, skill-azure;
   animation-delay: 10.3s;
 }
-
+#blob-skill-logo-javascript {
+  top: 24%;
+  left: 39%;
+  animation-name: skill-opacity, skill-scale, skill-javascript;
+  animation-delay: 15.6s;
+}
+#blob-skill-logo-sql {
+  top: 42%;
+  left: 32%;
+  animation-name: skill-opacity, skill-scale, skill-sql;
+  animation-delay: 15s;
+}
+#blob-skill-logo-php {
+  top: 30%;
+  left: 54%;
+  animation-name: skill-opacity, skill-scale, skill-php;
+  animation-delay: 15.3s;
+}
+@media (min-width: 600px) {
+  .skill-logo {
+    height: 4.5rem;
+  }
+  #blob-skill-logo-react {
+    top: 28%;
+    left: 49%;
+  }
+  #blob-skill-logo-github {
+    top: 13%;
+    left: 27%;
+  }
+  #blob-skill-logo-typescript {
+    top: 70%;
+    left: 29%;
+  }
+  #blob-skill-logo-next-js {
+    top: 25%;
+    left: 50%;
+  }
+  #blob-skill-logo-css {
+    top: 55%;
+    left: 26%;
+  }
+  #blob-skill-logo-seo {
+    top: 62%;
+    left: 62%;
+  }
+  #blob-skill-logo-csharp {
+    top: 20%;
+    left: 28%;
+  }
+  #blob-skill-logo-gatsby {
+    top: 66%;
+    left: 46%;
+  }
+  #blob-skill-logo-azure {
+    top: 15%;
+    left: 53%;
+  }
+  #blob-skill-logo-javascript {
+    top: 34%;
+    left: 39%;
+  }
+  #blob-skill-logo-sql {
+    top: 60%;
+    left: 28%;
+  }
+  #blob-skill-logo-php {
+    top: 40%;
+    left: 56%;
+  }
+}
 @keyframes skill-opacity {
   0%,
   18%,
@@ -143,7 +195,7 @@
 }
 @keyframes skill-react {
   15% {
-    transform: scale(1) var(--skill-transform-right-down-anticlockwise);
+    transform: var(--skill-transform-right-down-anticlockwise);
   }
   18% {
     transform: var(--skill-scale-start);
@@ -189,30 +241,6 @@
     transform: var(--skill-scale-start);
   }
 }
-@keyframes skill-javascript {
-  15% {
-    transform: var(--skill-transform-right-up-clockwise);
-  }
-  18% {
-    transform: var(--skill-scale-start);
-  }
-}
-@keyframes skill-sql {
-  15% {
-    transform: var(--skill-transform-left-up-anticlockwise);
-  }
-  18% {
-    transform: var(--skill-scale-start);
-  }
-}
-@keyframes skill-php {
-  15% {
-    transform: scale(1) var(--skill-transform-right-down-anticlockwise);
-  }
-  18% {
-    transform: var(--skill-scale-start);
-  }
-}
 @keyframes skill-csharp {
   15% {
     transform: var(--skill-transform-left-up-anticlockwise);
@@ -232,6 +260,30 @@
 @keyframes skill-azure {
   15% {
     transform: var(--skill-transform-left-down-anticlockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
+@keyframes skill-javascript {
+  15% {
+    transform: var(--skill-transform-right-up-clockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
+@keyframes skill-sql {
+  15% {
+    transform: var(--skill-transform-left-up-anticlockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
+@keyframes skill-php {
+  15% {
+    transform: var(--skill-transform-right-down-anticlockwise);
   }
   18% {
     transform: var(--skill-scale-start);
