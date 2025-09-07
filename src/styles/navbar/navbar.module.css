@@ -59,6 +59,7 @@
     left: unset;
     opacity: 1;
     height: auto;
+    gap: 1.25rem;
   }
   .nav-links,
   .nav-link-ul:first-of-type:not(:last-of-type) {
@@ -68,13 +69,14 @@
     width: 80%;
   }
   .nav-link-ul:last-of-type {
-    width: min(11rem, 15%);
+    width: min(11rem, 20%);
   }
   .nav-link-ul {
     gap: 1rem;
   }
 }
 @media (min-width: 1180px) {
+  .nav-links,
   .nav-link-ul {
     gap: 2rem;
   }

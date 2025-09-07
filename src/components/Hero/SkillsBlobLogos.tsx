@@ -5,15 +5,19 @@ const SkillsBlobLogos = () => {
     'React',
     'GitHub/GitHub Actions',
     'TypeScript',
+    'HTML5', // Only displayed after 900px
     'Next.js',
     'SEO',
     'CSS3',
+    'MUI', // Only displayed after 900px
     'Gatsby.js',
     'Azure',
     'C#',
+    'Git',
     'JavaScript',
     'SQL',
     'PHP',
+    'Tailwind', // Only displayed after 900px
   ];
   const skillLogos = skills
     .map((x) =>

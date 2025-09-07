@@ -1,17 +1,18 @@
 .blob-container {
   position: relative;
-  --blob-transform: scale(0.45) translateY(0) rotate(0deg);
-  --blob-transform-rotate: scale(0.45) translateY(0) rotate(5deg);
-  --blob-transform-translate: scale(0.45) translateY(15%) rotate(0deg);
-  --blob-transform-translate-rotate: scale(0.45) translateY(15%) rotate(-5deg);
-  --blob-1-transform: scale(0.45) translateY(-100%) rotate(0deg);
-  --blob-1-transform-rotate: scale(0.45) translateY(-100%) rotate(5deg);
 }
 .blob {
   position: relative;
   width: 600px;
   height: 550px;
   margin-bottom: -275px;
+  --blob-transform-origin: top center;
+  --blob-transform: scale(0.45) translateY(0) rotate(0deg);
+  --blob-transform-rotate: scale(0.45) translateY(0) rotate(5deg);
+  --blob-transform-translate: scale(0.45) translateY(15%) rotate(0deg);
+  --blob-transform-translate-rotate: scale(0.45) translateY(15%) rotate(-5deg);
+  --blob-1-transform: scale(0.45) translateY(-100%) rotate(0deg);
+  --blob-1-transform-rotate: scale(0.45) translateY(-100%) rotate(5deg);
   --blob-1: path(
     'm392.448 59.136c35.28 18.48 63.168 52.416 73.248 89.712 10.08 37.632 2.016 78.96-9.408 115.584-11.424 36.624-26.208 68.88-49.056 93.072-22.848 24.528-53.76 40.656-92.736 71.232-38.64 30.912-86.016 76.272-134.736 82.656-48.72 6.048-99.12-26.88-123.312-72.576-23.856-46.032-21.504-104.496-30.912-161.952-9.408-57.792-30.24-114.24-20.16-165.312 10.08-50.736 51.408-95.76 101.136-107.52 49.392-12.096 107.52 9.072 157.92 21.504 50.064 12.096 92.736 15.12 128.016 33.6z'
   );
@@ -24,7 +25,7 @@
   animation: blob-shape 20s linear infinite;
   /* clip-path: var(--blob-3);
   transform: var(--blob-transform-rotate);
-  transform-origin: top center; */
+  transform-origin: center center; */
 }
 .blob::before {
   content: '';
@@ -45,20 +46,25 @@
   }
 }
 @media (min-width: 900px) {
+  .blob-container {
+    width: 390px;
+  }
   .blob {
     margin-bottom: 0;
-    --blob-transform: scale(0.75) translateY(0) rotate(0deg);
-    --blob-transform-rotate: scale(0.75) translateY(0) rotate(5deg);
-    --blob-transform-translate: scale(0.75) translateY(15%) rotate(0deg);
-    --blob-transform-translate-rotate: scale(0.75) translateY(15%) rotate(-5deg);
-    --blob-1-transform: scale(0.75) translateY(-30%) rotate(0deg);
-    --blob-1-transform-rotate: scale(0.75) translateY(-30%) rotate(5deg);
+    --blob-transform-origin: center center;
+    --blob-transform: scale(0.65) translateY(0) rotate(0deg);
+    --blob-transform-rotate: scale(0.65) translateY(0) rotate(5deg);
+    --blob-transform-translate: scale(0.65) translateY(15%) rotate(0deg);
+    --blob-transform-translate-rotate: scale(0.65) translateY(15%) rotate(-5deg);
+    --blob-1-transform: scale(0.65) translateY(-30%) rotate(0deg);
+    --blob-1-transform-rotate: scale(0.65) translateY(-30%) rotate(5deg);
+    left: -22%;
   }
   .blob::before {
     inset: -18%;
   }
 }
-@media (min-width: 1180px) {
+@media (min-width: 1100px) {
   .blob {
     --blob-transform: translateY(0) rotate(0deg);
     --blob-transform-rotate: translateY(0) rotate(5deg);
@@ -90,7 +96,7 @@
   75%,
   90% {
     clip-path: var(--blob-2);
-    transform-origin: top center;
+    transform-origin: var(--blob-transform-origin);
   }
   25%,
   90% {
@@ -103,7 +109,7 @@
   50%,
   65% {
     clip-path: var(--blob-3);
-    transform-origin: top center;
+    transform-origin: var(--blob-transform-origin);
   }
   50% {
     transform: var(--blob-transform);

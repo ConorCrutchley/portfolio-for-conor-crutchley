@@ -33,6 +33,7 @@
     rotate(-10deg);
   --skill-transform-left-up-anticlockwise: scale(1) translate(-10%, -10%)
     rotate(-10deg);
+  --skill-animation: skill-opacity, skill-scale;
   transform: var(--skill-scale-start);
 }
 .skill-logo img {
@@ -44,80 +45,87 @@
 }
 /* #blob-skill-logo-csharp,
 #blob-skill-logo-gatsby,
-#blob-skill-logo-azure {
+#blob-skill-logo-azure,
+#blob-skill-logo-git {
   opacity: 1;
   transform: scale(1) translate(0, 0) rotate(0deg);
 } */
 #blob-skill-logo-react {
   top: 35%;
   left: 50%;
-  animation-name: skill-opacity, skill-scale, skill-react;
-  animation-delay: 0.3s;
+  animation-name: var(--skill-animation), skill-react;
+  animation-delay: 0.6s;
 }
 #blob-skill-logo-github {
   top: 28%;
   left: 31%;
-  animation-name: skill-opacity, skill-scale, skill-github;
-  animation-delay: 0.6s;
+  animation-name: var(--skill-animation), skill-github;
+  animation-delay: 0s;
 }
 #blob-skill-logo-typescript {
   top: 65%;
   left: 35%;
-  animation-name: skill-opacity, skill-scale, skill-typescript;
-  animation-delay: 0s;
+  animation-name: var(--skill-animation), skill-typescript;
+  animation-delay: 0.3s;
 }
 #blob-skill-logo-next-js {
   top: 19%;
   left: 50%;
-  animation-name: skill-opacity, skill-scale, skill-next-js;
+  animation-name: var(--skill-animation), skill-next-js;
   animation-delay: 5.6s;
 }
 #blob-skill-logo-css {
   top: 37%;
   left: 31%;
-  animation-name: skill-opacity, skill-scale, skill-css;
+  animation-name: var(--skill-animation), skill-css;
   animation-delay: 5.3s;
 }
 #blob-skill-logo-seo {
   top: 43%;
   left: 59%;
-  animation-name: skill-opacity, skill-scale, skill-seo;
+  animation-name: var(--skill-animation), skill-seo;
   animation-delay: 5s;
 }
 #blob-skill-logo-csharp {
   top: 18%;
   left: 33%;
-  animation-name: skill-opacity, skill-scale, skill-csharp;
+  animation-name: var(--skill-animation), skill-csharp;
   animation-delay: 10s;
 }
 #blob-skill-logo-gatsby {
   top: 47%;
   left: 45%;
-  animation-name: skill-opacity, skill-scale, skill-gatsby;
+  animation-name: var(--skill-animation), skill-gatsby;
   animation-delay: 10.6s;
 }
 #blob-skill-logo-azure {
   top: 11%;
   left: 51%;
-  animation-name: skill-opacity, skill-scale, skill-azure;
+  animation-name: var(--skill-animation), skill-azure;
   animation-delay: 10.3s;
+}
+#blob-skill-logo-git {
+  top: 42%;
+  left: 31%;
+  animation-name: var(--skill-animation), skill-git;
+  animation-delay: 10.9s;
 }
 #blob-skill-logo-javascript {
   top: 24%;
   left: 39%;
-  animation-name: skill-opacity, skill-scale, skill-javascript;
+  animation-name: var(--skill-animation), skill-javascript;
   animation-delay: 15.6s;
 }
 #blob-skill-logo-sql {
   top: 42%;
   left: 32%;
-  animation-name: skill-opacity, skill-scale, skill-sql;
+  animation-name: var(--skill-animation), skill-sql;
   animation-delay: 15s;
 }
 #blob-skill-logo-php {
   top: 30%;
   left: 54%;
-  animation-name: skill-opacity, skill-scale, skill-php;
+  animation-name: var(--skill-animation), skill-php;
   animation-delay: 15.3s;
 }
 @media (min-width: 600px) {
@@ -160,6 +168,10 @@
     top: 15%;
     left: 53%;
   }
+  #blob-skill-logo-git {
+    top: 57%;
+    left: 24%;
+  }
   #blob-skill-logo-javascript {
     top: 34%;
     left: 39%;
@@ -171,6 +183,94 @@
   #blob-skill-logo-php {
     top: 40%;
     left: 56%;
+  }
+}
+@media (min-width: 900px) {
+  #blob-skill-logo-react {
+    top: 42%;
+    left: 35%;
+    /* transform: var(--skill-transform-right-down-anticlockwise); */
+  }
+  #blob-skill-logo-github {
+    top: 24%;
+    left: 13%;
+    /* transform: var(--skill-transform-right-up-clockwise); */
+  }
+  #blob-skill-logo-typescript {
+    top: 58%;
+    left: 20%;
+    /* transform: var(--skill-transform-left-up-clockwise); */
+  }
+  #blob-skill-logo-html {
+    top: 30%;
+    left: 59%;
+    /* transform: var(--skill-transform-left-up-anticlockwise); */
+    animation-name: var(--skill-animation), skill-html;
+    animation-delay: 0.9s;
+  }
+  #blob-skill-logo-next-js {
+    top: 30%;
+    left: 56%;
+    /* transform: var(--skill-transform-left-down-clockwise); */
+  }
+  #blob-skill-logo-css {
+    top: 46%;
+    left: 11%;
+    /* transform: var(--skill-transform-right-down-clockwise); */
+  }
+  #blob-skill-logo-seo {
+    top: 54%;
+    left: 79%;
+    /* transform: var(--skill-transform-left-up-anticlockwise); */
+  }
+  #blob-skill-logo-mui {
+    top: 52%;
+    left: 44%;
+    /* transform: var(--skill-transform-left-down-anticlockwise); */
+    animation-name: var(--skill-animation), skill-mui;
+    animation-delay: 5.9s;
+  }
+  #blob-skill-logo-csharp {
+    top: 28%;
+    left: 20%;
+    transform: var(--skill-transform-left-up-anticlockwise);
+  }
+  #blob-skill-logo-gatsby {
+    top: 55%;
+    left: 54%;
+    transform: var(--skill-transform-left-up-clockwise);
+  }
+  #blob-skill-logo-azure {
+    top: 25%;
+    left: 62%;
+    transform: var(--skill-transform-left-down-anticlockwise);
+  }
+  #blob-skill-logo-git {
+    top: 52%;
+    left: 13%;
+    transform: var(--skill-transform-left-up-clockwise);
+  }
+  #blob-skill-logo-javascript {
+    top: 38%;
+    left: 30%;
+    /* transform: var(--skill-transform-right-up-clockwise); */
+  }
+  #blob-skill-logo-sql {
+    top: 53%;
+    left: 16%;
+    /* transform: var(--skill-transform-left-up-anticlockwise); */
+  }
+  #blob-skill-logo-php {
+    top: 48%;
+    left: 78%;
+    /* transform: var(--skill-transform-right-down-anticlockwise); */
+  }
+  #blob-skill-logo-tailwind {
+    top: 34%;
+    left: 59%;
+    /* transform: var(--skill-transform-left-down-clockwise); */
+    animation-name: var(--skill-animation), skill-tailwind;
+    animation-delay: 15.9s;
   }
 }
 @keyframes skill-opacity {
@@ -217,6 +317,14 @@
     transform: var(--skill-scale-start);
   }
 }
+@keyframes skill-html {
+  15% {
+    transform: var(--skill-transform-left-up-anticlockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
 @keyframes skill-next-js {
   15% {
     transform: var(--skill-transform-left-down-clockwise);
@@ -236,6 +344,14 @@
 @keyframes skill-seo {
   15% {
     transform: var(--skill-transform-left-up-anticlockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
+@keyframes skill-mui {
+  15% {
+    transform: var(--skill-transform-left-down-anticlockwise);
   }
   18% {
     transform: var(--skill-scale-start);
@@ -265,6 +381,14 @@
     transform: var(--skill-scale-start);
   }
 }
+@keyframes skill-git {
+  15% {
+    transform: var(--skill-transform-left-up-clockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
 @keyframes skill-javascript {
   15% {
     transform: var(--skill-transform-right-up-clockwise);
@@ -284,6 +408,14 @@
 @keyframes skill-php {
   15% {
     transform: var(--skill-transform-right-down-anticlockwise);
+  }
+  18% {
+    transform: var(--skill-scale-start);
+  }
+}
+@keyframes skill-tailwind {
+  15% {
+    transform: var(--skill-transform-left-down-clockwise);
   }
   18% {
     transform: var(--skill-scale-start);

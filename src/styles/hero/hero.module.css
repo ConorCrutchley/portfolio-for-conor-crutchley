@@ -9,7 +9,7 @@
     flex-direction: row;
   }
   .hero-text {
-    width: calc(100% - 500px);
+    width: 100%;
   }
 }
 @media (min-width: 1180px) {
