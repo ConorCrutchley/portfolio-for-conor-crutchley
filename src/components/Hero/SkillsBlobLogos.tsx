@@ -6,18 +6,22 @@ const SkillsBlobLogos = () => {
     'GitHub/GitHub Actions',
     'TypeScript',
     'HTML5', // Only displayed after 900px
+    'REST APIs', // Only displayed after 1180px
     'Next.js',
     'SEO',
     'CSS3',
     'MUI', // Only displayed after 900px
+    'TanStack Start', // Only displayed after 1180px
     'Gatsby.js',
     'Azure',
     'C#',
     'Git',
+    'Astro.js', // Only displayed after 1180px
     'JavaScript',
     'SQL',
     'PHP',
     'Tailwind', // Only displayed after 900px
+    '.Net',
   ];
   const skillLogos = skills
     .map((x) =>
