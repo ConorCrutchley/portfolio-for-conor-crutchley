@@ -292,7 +292,7 @@
     top: 52%;
     left: 44%;
   }
-  #blob-skill-logo-tanstack-start {
+  #blob-skill-logo-dot-net {
     top: 30%;
     left: 23%;
     animation-name: var(--skill-animation), skill-to-left-down-anticlockwise;
@@ -314,7 +314,7 @@
     top: 56%;
     left: 8%;
   }
-  #blob-skill-logo-astro-js {
+  #blob-skill-logo-tanstack-start {
     top: 38%;
     left: 35%;
     animation-name: var(--skill-animation), skill-to-right-down-clockwise;
@@ -336,7 +336,7 @@
     top: 21%;
     left: 53%;
   }
-  #blob-skill-logo-dot-net {
+  #blob-skill-logo-astro-js {
     top: 47%;
     left: 47%;
     animation-name: var(--skill-animation), skill-to-left-down-anticlockwise;

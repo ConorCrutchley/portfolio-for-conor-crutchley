@@ -11,17 +11,17 @@ const SkillsBlobLogos = () => {
     'SEO',
     'CSS3',
     'MUI', // Only displayed after 900px
-    'TanStack Start', // Only displayed after 1180px
+    '.Net', // Only displayed after 1180px
     'Gatsby.js',
     'Azure',
     'C#',
     'Git',
-    'Astro.js', // Only displayed after 1180px
+    'TanStack Start', // Only displayed after 1180px
     'JavaScript',
     'SQL',
     'PHP',
     'Tailwind', // Only displayed after 900px
-    '.Net',
+    'Astro.js', // Only displayed after 1180px
   ];
   const skillLogos = skills
     .map((x) =>
