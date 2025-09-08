@@ -1,3 +1,4 @@
+import Card from '../Card';
 import type { IExperience } from '@/models/experience.model';
 
 const Experience = ({ experience }: { experience: IExperience }) => {
@@ -7,7 +8,7 @@ const Experience = ({ experience }: { experience: IExperience }) => {
   const dateDiff = dateEnd.getTime() - dateStart.getTime();
   const years = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 365));
   return (
-    <div>
+    <Card>
       <div>
         <h3>
           {experience.company} - {experience.title}
@@ -19,7 +20,7 @@ const Experience = ({ experience }: { experience: IExperience }) => {
           <li key={`experience_${experience.key}_${i}`}>{bullet}</li>
         ))}
       </ul>
-    </div>
+    </Card>
   );
 };
 
