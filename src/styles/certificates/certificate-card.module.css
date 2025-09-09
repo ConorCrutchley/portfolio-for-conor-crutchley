@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  width: 100%;
+  margin: 0;
 }
 .certificate-images {
   display: flex;
@@ -42,5 +44,6 @@ p.certificate-subtitle {
 @media (min-width: 900px) {
   .certificate-card {
     flex-direction: row;
+    width: calc(50% - 1rem);
   }
 }

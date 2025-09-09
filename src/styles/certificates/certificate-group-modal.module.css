@@ -1,0 +1,45 @@
+.certificate-modal {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 2/1;
+  width: 30rem;
+  max-width: 100%;
+  margin: 1.5rem 0;
+}
+.certificate-modal-open {
+  width: auto;
+  height: auto;
+  aspect-ratio: unset;
+}
+.certificate-modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-modal-open .certificate-modal-header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+.certificate-cards {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  opacity: 0;
+}
+.certificate-modal-open .certificate-cards {
+  position: relative;
+  opacity: 1;
+}
+@media (min-width: 900px) {
+  .certificate-modal {
+    margin: 4rem 0;
+  }
+}

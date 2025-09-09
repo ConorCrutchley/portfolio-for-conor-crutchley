@@ -1,13 +1,14 @@
 import { CertificateGroupModal, University } from '@/components/Certificates';
 
 import { certificateGroups } from '@/models/certificates.model';
+import styles from '@/styles/certificates/certificates.module.css';
 
 const Certificates = () => {
   return (
     <section id="certificates">
       <h2>Courses</h2>
       <University />
-      <div>
+      <div className={styles['courses']}>
         {certificateGroups.map((certificateGroup) => (
           <CertificateGroupModal
             key={`certificate-group_${certificateGroup.group}`}
