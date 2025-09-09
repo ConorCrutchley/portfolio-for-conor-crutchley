@@ -1,9 +1,10 @@
+import Card from '@/components/Card';
 import type { IProject } from '@/models/projects.model';
 import githubLogo from '@/assets/skill-logos/github-logo.png';
 
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (
-    <div>
+    <Card>
       <img src={project.thumbnail.src} alt={project.thumbnail.alt} />
       <p>
         <strong>{project.title}</strong>
@@ -22,7 +23,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
           Visit Site
         </a>
       </div>
-    </div>
+    </Card>
   );
 };
 

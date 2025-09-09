@@ -1,8 +1,9 @@
+import Card from '@/components/Card';
 import StaffordshireUniversityLogo from '@/assets/staffordshire-university-square-logo.png';
 
 const University = () => {
   return (
-    <div>
+    <Card>
       <img
         src={StaffordshireUniversityLogo}
         alt="Staffordshire University Logo"
@@ -15,7 +16,7 @@ const University = () => {
         </h3>
         <p>First Class Honours</p>
       </div>
-    </div>
+    </Card>
   );
 };
 

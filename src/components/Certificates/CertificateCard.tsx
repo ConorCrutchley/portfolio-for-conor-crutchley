@@ -2,11 +2,12 @@ import {
   certificatePlatforms,
   type ICertificate,
 } from '@/models/certificates.model';
+import Card from '@/components/Card';
 
 const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
   const platform = certificatePlatforms[certificate.platform];
   return (
-    <div>
+    <Card>
       <div>
         <img src={certificate.thumbnail.src} alt={certificate.thumbnail.alt} />
         <img src={platform.src} alt={platform.alt} />
@@ -28,7 +29,7 @@ const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
           View Certificate
         </a>
       </div>
-    </div>
+    </Card>
   );
 };
 

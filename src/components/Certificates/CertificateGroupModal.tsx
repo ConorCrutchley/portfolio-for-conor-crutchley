@@ -1,3 +1,4 @@
+import Card from '@/components/Card';
 import CertificateCard from '@/components/Certificates/CertificateCard';
 import type { ICertificateGroup } from '@/models/certificates.model';
 
@@ -7,7 +8,7 @@ const CertificateGroupModal = ({
   certificateGroup: ICertificateGroup;
 }) => {
   return (
-    <div>
+    <Card>
       <div>
         <h3>{certificateGroup.group}</h3>
       </div>
@@ -19,7 +20,7 @@ const CertificateGroupModal = ({
           />
         ))}
       </div>
-    </div>
+    </Card>
   );
 };
 
