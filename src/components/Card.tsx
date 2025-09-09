@@ -6,7 +6,7 @@ const Card = ({
   className,
 }: {
   children: ReactNode;
-  className: string;
+  className?: string;
 }) => {
   return <div className={`${styles['card']} ${className}`}>{children}</div>;
 };

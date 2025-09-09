@@ -44,6 +44,10 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+h4 {
+  font-size: 1.25rem;
+  margin: 0;
+}
 section {
   width: min(100%, 1500px);
   margin: 2rem auto;
@@ -58,7 +62,14 @@ section ul:last-of-type {
 img {
   max-width: 200px;
 }
-button {
+.button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+}
+button,
+.button {
   background: transparent;
   color: var(--text-color);
   border: none;
@@ -71,7 +82,8 @@ button {
   transition: transform 0.5s;
   font-size: 1.2rem;
 }
-button::before {
+button::before,
+.button::before {
   position: absolute;
   content: '';
   aspect-ratio: 1/1;
@@ -83,7 +95,8 @@ button::before {
   z-index: -1;
   animation: rotate-gradient-background 5s ease-in-out infinite;
 }
-button::after {
+button::after,
+.button::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -96,10 +109,12 @@ button::after {
   transition: transform 0.5s;
   z-index: -1;
 }
-button:hover {
+button:hover,
+.button:hover {
   transform: scale(1.1);
 }
-button:hover::after {
+button:hover::after,
+.button:hover::after {
   transform: translateX(100%) rotate(-45deg);
 }
 .row {

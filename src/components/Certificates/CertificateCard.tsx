@@ -3,20 +3,33 @@ import {
   type ICertificate,
 } from '@/models/certificates.model';
 import Card from '@/components/Card';
+import styles from '@/styles/certificates/certificate-card.module.css';
 
 const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
   const platform = certificatePlatforms[certificate.platform];
   return (
-    <Card>
-      <div>
-        <img src={certificate.thumbnail.src} alt={certificate.thumbnail.alt} />
-        <img src={platform.src} alt={platform.alt} />
+    <Card className={styles['certificate-card']}>
+      <div className={styles['certificate-images']}>
+        <img
+          className={styles['img-thumbnail']}
+          src={certificate.thumbnail.src}
+          alt={certificate.thumbnail.alt}
+        />
+        <div className={styles['img-platform-container']}>
+          <img
+            className={styles['img-platform']}
+            src={platform.src}
+            alt={platform.alt}
+          />
+        </div>
       </div>
-      <div>
-        <p>
-          <strong>{certificate.title}</strong>
-        </p>
-        <p>{certificate.subtitle}</p>
+      <div className={styles['certificate-content']}>
+        <div className={styles['certificate-title']}>
+          <h4>{certificate.title}</h4>
+          <p className={styles['certificate-subtitle']}>
+            {certificate.subtitle}
+          </p>
+        </div>
         <p>
           <strong>Course By: </strong>
           {certificate.provider}
@@ -25,6 +38,7 @@ const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
           href={certificate.certificateLink}
           target="_blank"
           rel="noopener noreferrer"
+          className="button"
         >
           View Certificate
         </a>
