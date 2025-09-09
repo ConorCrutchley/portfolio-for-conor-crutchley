@@ -5,7 +5,7 @@
     0.1rem 0.1rem 0.5rem 0.2rem var(--cyan),
     0.4rem 0.4rem 0.5rem 0.25rem var(--lilac);
   border-radius: 0.5rem;
-  margin: 2rem;
+  margin: 2rem 0rem;
   padding: 2rem;
 }
 .card h3 {

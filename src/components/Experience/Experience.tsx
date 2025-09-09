@@ -1,5 +1,6 @@
 import Card from '../Card';
 import type { IExperience } from '@/models/experience.model';
+import styles from '@/styles/experience/experience.module.css';
 
 const Experience = ({ experience }: { experience: IExperience }) => {
   const today = new Date();
@@ -9,13 +10,13 @@ const Experience = ({ experience }: { experience: IExperience }) => {
   const years = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 365));
   return (
     <Card>
-      <div>
+      <div className={styles['experience-header']}>
         <h3>
           {experience.company} - {experience.title}
         </h3>
-        <span>{years} years</span>
+        <span className={styles['duration-pill']}>{years} years</span>
       </div>
-      <ul>
+      <ul className={styles['experience-list']}>
         {experience.bullets.map((bullet, i) => (
           <li key={`experience_${experience.key}_${i}`}>{bullet}</li>
         ))}

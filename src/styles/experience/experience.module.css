@@ -1,0 +1,24 @@
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.duration-pill {
+  background: var(--highlight-gradient);
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+}
+.experience-list {
+  padding-inline-start: 1rem;
+}
+@media (min-width: 900px) {
+  .experience-header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .experience-header h3 {
+    margin-bottom: 0;
+  }
+}
