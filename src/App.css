@@ -5,12 +5,14 @@
   --mid-translucent-grey: #3c3c3b99;
   --text-color: #ececec;
   --cyan: #3cd2de;
+  --dark-cyan: #5db7dd;
+  --dark-lilac: #6fa4dc;
   --lilac: #888bdb;
   --highlight-gradient: linear-gradient(
     45deg,
     var(--cyan) 20%,
-    #5db7dd 40%,
-    #6fa4dc 60%,
+    var(--dark-cyan) 40%,
+    var(--dark-lilac) 60%,
     var(--lilac) 75%
   );
   font-family: 'Righteous', system-ui;

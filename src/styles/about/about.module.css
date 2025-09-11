@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  line-height: 1.25rem;
 }
 @media (min-width: 900px) {
   .about {
