@@ -27,6 +27,7 @@
 .certificate-modal-header {
   inset: 0;
   z-index: 1;
+  text-align: center;
 }
 .certificate-modal-header-title,
 .modal-button-container {
@@ -36,6 +37,11 @@
 .certificate-modal-header-title {
   left: 50%;
   transform: translate(-50%, -120%);
+  width: calc(100% - 4rem);
+}
+.certificate-modal.certificate-modal-open .certificate-modal-header,
+.certificate-modal.certificate-modal-transitioning .certificate-modal-header {
+  text-align: left;
 }
 .modal-button-container {
   right: 50%;
@@ -109,6 +115,7 @@
 .certificate-modal.certificate-modal-transitioning
   .certificate-modal-header-title {
   left: 2rem;
+  width: calc(100% - 6rem);
 }
 .certificate-modal.certificate-modal-transitioning .modal-button-container {
   right: 2rem;
@@ -148,6 +155,18 @@
 }
 .certificate-modal.certificate-modal-close-start .certificate-cards {
   opacity: 0;
+}
+@media (min-width: 600px) {
+  .certificate-modal-header,
+  .certificate-modal.certificate-modal-open .certificate-modal-header,
+  .certificate-modal.certificate-modal-transitioning .certificate-modal-header {
+    text-align: unset;
+  }
+  .certificate-modal-header-title,
+  .certificate-modal.certificate-modal-transitioning
+    .certificate-modal-header-title {
+    width: auto;
+  }
 }
 @media (min-width: 900px) {
   .certificate-modal {

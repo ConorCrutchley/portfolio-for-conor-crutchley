@@ -41,9 +41,13 @@ p.certificate-subtitle {
   margin-top: 0.5rem;
   font-size: 0.9rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .certificate-card {
     flex-direction: row;
+  }
+}
+@media (min-width: 900px) {
+  .certificate-card {
     width: calc(50% - 1rem);
   }
 }
