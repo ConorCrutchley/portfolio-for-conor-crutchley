@@ -7,7 +7,7 @@ const SocialLinks = () => {
       <li>
         <a
           className={styles['social-link']}
-          href="https://www.linkedin.com/in/conor-crutchley-13446696/"
+          href={process.env.PUBLIC_LINKS_LINKEDIN}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -19,7 +19,8 @@ const SocialLinks = () => {
       <li>
         <a
           className={styles['social-link']}
-          href="https://github.com/ConorCrutchley"
+          href={process.env.PUBLIC_LINKS_GITHUB}
+          target="_blank"
           rel="noopener noreferrer"
         >
           <span className={styles['icon']}></span>
