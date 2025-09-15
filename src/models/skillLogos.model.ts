@@ -32,38 +32,137 @@ import visualStudioLogo from '@/assets/skill-logos/visual-studio.png';
 import vsCodeLogo from '@/assets/skill-logos/vs-code.png';
 import wordpressLogo from '@/assets/skill-logos/wordpress-icon-logo.png';
 
-export {
-  astroLogo,
-  azureLogo,
-  cSharpLogo,
-  cicdPipelinesLogo,
-  crossBrowserLogo,
-  cssLogo,
-  devopsLogo,
-  directusLogo,
-  dotNetLogo,
-  entityFrameworkLogo,
-  gatsbyLogo,
-  gitLogo,
-  githubLogo,
-  htmlLogo,
-  jsLogo,
-  lighthouseLogo,
-  muiLogo,
-  mysqlLogo,
-  nextJsLogo,
-  phpLogo,
-  reactLogo,
-  restLogo,
-  seoLogo,
-  shadcnLogo,
-  sqlLogo,
-  structuredDataLogo,
-  tailwindLogo,
-  tanstackLogo,
-  typescriptLogo,
-  visualBasicLogo,
-  visualStudioLogo,
-  vsCodeLogo,
-  wordpressLogo,
+export const skillLogos = {
+  astro: {
+    src: astroLogo,
+    alt: 'Astro.js logo',
+  },
+  azure: {
+    src: azureLogo,
+    alt: 'Azure logo',
+  },
+  cSharp: {
+    src: cSharpLogo,
+    alt: 'C# logo',
+  },
+  cicdPipelines: {
+    src: cicdPipelinesLogo,
+    alt: 'CI/CD Pipelines logo',
+  },
+  crossBrowser: {
+    src: crossBrowserLogo,
+    alt: 'Cross Browser Compatibility logo',
+  },
+  css: {
+    src: cssLogo,
+    alt: 'CSS logo',
+  },
+  devops: {
+    src: devopsLogo,
+    alt: 'Azure DevOps logo',
+  },
+  directus: {
+    src: directusLogo,
+    alt: 'DirectUs logo',
+  },
+  dotNet: {
+    src: dotNetLogo,
+    alt: '.Net logo',
+  },
+  entityFramework: {
+    src: entityFrameworkLogo,
+    alt: 'Entity Framework logo',
+  },
+  gatsby: {
+    src: gatsbyLogo,
+    alt: 'Gatsby.js logo',
+  },
+  git: {
+    src: gitLogo,
+    alt: 'Git logo',
+  },
+  github: {
+    src: githubLogo,
+    alt: 'GitHub logo',
+  },
+  html: {
+    src: htmlLogo,
+    alt: 'HTML logo',
+  },
+  js: {
+    src: jsLogo,
+    alt: 'JavaScript logo',
+  },
+  lighthouse: {
+    src: lighthouseLogo,
+    alt: 'Lighthouse logo',
+  },
+  mui: {
+    src: muiLogo,
+    alt: 'Material UI logo',
+  },
+  mysql: {
+    src: mysqlLogo,
+    alt: 'MySQL logo',
+  },
+  nextJs: {
+    src: nextJsLogo,
+    alt: 'Next.js logo',
+  },
+  php: {
+    src: phpLogo,
+    alt: 'PHP logo',
+  },
+  react: {
+    src: reactLogo,
+    alt: 'React logo',
+  },
+  rest: {
+    src: restLogo,
+    alt: 'REST logo',
+  },
+  seo: {
+    src: seoLogo,
+    alt: 'SEO logo',
+  },
+  shadcn: {
+    src: shadcnLogo,
+    alt: 'Shadcn logo',
+  },
+  sql: {
+    src: sqlLogo,
+    alt: 'SQL logo',
+  },
+  structuredData: {
+    src: structuredDataLogo,
+    alt: 'Structured Data logo',
+  },
+  tailwind: {
+    src: tailwindLogo,
+    alt: 'Tailwind logo',
+  },
+  tanstack: {
+    src: tanstackLogo,
+    alt: 'Tanstack logo',
+  },
+  typescript: {
+    src: typescriptLogo,
+    alt: 'TypeScript logo',
+  },
+  visualBasic: {
+    src: visualBasicLogo,
+    alt: 'Visual Basic logo',
+  },
+  visualStudio: {
+    src: visualStudioLogo,
+    alt: 'Visual Studio logo',
+  },
+  vsCode: {
+    src: vsCodeLogo,
+    alt: 'VS Code logo',
+  },
+  wordpress: {
+    src: wordpressLogo,
+    alt: 'WordPress logo',
+  },
 };

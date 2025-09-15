@@ -1,6 +1,5 @@
-import * as skillLogos from '@/models/skillLogos.model';
-
 import type { IImageAttr } from '@/models/imageAttr.model';
+import { skillLogos } from '@/models/skillLogos.model';
 
 interface ISkill {
   key: string;
@@ -59,109 +58,73 @@ export const skills: ISkill[] = [
         key: 'react',
         skill: 'React',
         level: 85,
-        logo: {
-          src: skillLogos.reactLogo,
-          alt: 'React Logo',
-        },
+        logo: skillLogos.react,
       },
       {
         key: 'typescript',
         skill: 'TypeScript',
         level: 90,
-        logo: {
-          src: skillLogos.typescriptLogo,
-          alt: 'TypeScript Logo',
-        },
+        logo: skillLogos.typescript,
       },
       {
         key: 'html',
         skill: 'HTML5',
         level: 100,
-        logo: {
-          src: skillLogos.htmlLogo,
-          alt: 'HTML Logo',
-        },
+        logo: skillLogos.html,
       },
       {
         key: 'css',
         skill: 'CSS3',
         level: 100,
-        logo: {
-          src: skillLogos.cssLogo,
-          alt: 'CSS Logo',
-        },
+        logo: skillLogos.css,
       },
       {
         key: 'javascript',
         skill: 'JavaScript',
         level: 100,
-        logo: {
-          src: skillLogos.jsLogo,
-          alt: 'JavaScript Logo',
-        },
+        logo: skillLogos.js,
       },
       {
         key: 'gatsby',
         skill: 'Gatsby.js',
         level: 85,
-        logo: {
-          src: skillLogos.gatsbyLogo,
-          alt: 'Gatsby Logo',
-        },
+        logo: skillLogos.gatsby,
       },
       {
         key: 'next-js',
         skill: 'Next.js',
         level: 50,
-        logo: {
-          src: skillLogos.nextJsLogo,
-          alt: 'Next.js Logo',
-        },
+        logo: skillLogos.nextJs,
       },
       {
         key: 'astro-js',
         skill: 'Astro.js',
         level: 30,
-        logo: {
-          src: skillLogos.astroLogo,
-          alt: 'Astro.js Logo',
-        },
+        logo: skillLogos.astro,
       },
       {
         key: 'tanstack-start',
         skill: 'TanStack Start',
         level: 35,
-        logo: {
-          src: skillLogos.tanstackLogo,
-          alt: 'TanStack Start Logo',
-        },
+        logo: skillLogos.tanstack,
       },
       {
         key: 'mui',
         skill: 'MUI',
         level: 50,
-        logo: {
-          src: skillLogos.muiLogo,
-          alt: 'MUI Logo',
-        },
+        logo: skillLogos.mui,
       },
       {
         key: 'shadcn',
         skill: 'Shadcn',
         level: 25,
-        logo: {
-          src: skillLogos.shadcnLogo,
-          alt: 'Shadcn Logo',
-        },
+        logo: skillLogos.shadcn,
       },
       {
         key: 'tailwind',
         skill: 'Tailwind',
         level: 25,
-        logo: {
-          src: skillLogos.tailwindLogo,
-          alt: 'Tailwind Logo',
-        },
+        logo: skillLogos.tailwind,
       },
     ],
   },
@@ -173,64 +136,43 @@ export const skills: ISkill[] = [
         key: 'csharp',
         skill: 'C#',
         level: 80,
-        logo: {
-          src: skillLogos.cSharpLogo,
-          alt: 'C# Logo',
-        },
+        logo: skillLogos.cSharp,
       },
       {
         key: 'visual-basic',
         skill: 'Visual Basic',
         level: 70,
-        logo: {
-          src: skillLogos.visualBasicLogo,
-          alt: 'Visual Basic Logo',
-        },
+        logo: skillLogos.visualBasic,
       },
       {
         key: 'dot-net',
         skill: '.Net',
         level: 60,
-        logo: {
-          src: skillLogos.dotNetLogo,
-          alt: '.Net Logo',
-        },
+        logo: skillLogos.dotNet,
       },
       {
         key: 'entity-framework',
         skill: 'Entity Framework',
         level: 50,
-        logo: {
-          src: skillLogos.entityFrameworkLogo,
-          alt: 'Entity Framework Logo',
-        },
+        logo: skillLogos.entityFramework,
       },
       {
         key: 'sql',
         skill: 'SQL',
         level: 60,
-        logo: {
-          src: skillLogos.sqlLogo,
-          alt: 'SQL Logo',
-        },
+        logo: skillLogos.sql,
       },
       {
         key: 'php',
         skill: 'PHP',
         level: 70,
-        logo: {
-          src: skillLogos.phpLogo,
-          alt: 'PHP Logo',
-        },
+        logo: skillLogos.php,
       },
       {
         key: 'mysql',
         skill: 'MySQL',
         level: 60,
-        logo: {
-          src: skillLogos.mysqlLogo,
-          alt: 'MySQL Logo',
-        },
+        logo: skillLogos.mysql,
       },
     ],
   },
@@ -242,74 +184,50 @@ export const skills: ISkill[] = [
         key: 'git',
         skill: 'Git',
         level: 80,
-        logo: {
-          src: skillLogos.gitLogo,
-          alt: 'Git Logo',
-        },
+        logo: skillLogos.git,
       },
       {
         key: 'github',
         skill: 'GitHub/GitHub Actions',
         level: 80,
-        logo: {
-          src: skillLogos.githubLogo,
-          alt: 'GitHub Logo',
-        },
+        logo: skillLogos.github,
       },
       {
         key: 'azure',
         skill: 'Azure',
         level: 70,
-        logo: {
-          src: skillLogos.azureLogo,
-          alt: 'Azure Logo',
-        },
+        logo: skillLogos.azure,
       },
       {
         key: 'azure-devops',
         skill: 'Azure DevOps',
         level: 60,
-        logo: {
-          src: skillLogos.devopsLogo,
-          alt: 'Azure Logo',
-        },
+        logo: skillLogos.devops,
       },
       {
         key: 'ci-cd-pipelines',
         skill: 'CI/CD Pipelines',
         level: 80,
-        logo: {
-          src: skillLogos.cicdPipelinesLogo,
-          alt: 'CI/CD Logo',
-        },
+        logo: skillLogos.cicdPipelines,
       },
 
       {
         key: 'vs-code',
         skill: 'VS Code',
         level: 100,
-        logo: {
-          src: skillLogos.vsCodeLogo,
-          alt: 'VS Code Logo',
-        },
+        logo: skillLogos.vsCode,
       },
       {
         key: 'visual-studio',
         skill: 'Visual Studio',
         level: 100,
-        logo: {
-          src: skillLogos.visualStudioLogo,
-          alt: 'Visual Studio Logo',
-        },
+        logo: skillLogos.visualStudio,
       },
       {
         key: 'lighthouse',
         skill: 'Lighthouse',
         level: 100,
-        logo: {
-          src: skillLogos.lighthouseLogo,
-          alt: 'Lighthouse Logo',
-        },
+        logo: skillLogos.lighthouse,
       },
     ],
   },
@@ -321,55 +239,37 @@ export const skills: ISkill[] = [
         key: 'directus',
         skill: 'Directus',
         level: 80,
-        logo: {
-          src: skillLogos.directusLogo,
-          alt: 'Directus Logo',
-        },
+        logo: skillLogos.directus,
       },
       {
         key: 'wordpress',
         skill: 'WordPress',
         level: 80,
-        logo: {
-          src: skillLogos.wordpressLogo,
-          alt: 'WordPress Logo',
-        },
+        logo: skillLogos.wordpress,
       },
       {
         key: 'rest-apis',
         skill: 'REST APIs',
         level: 100,
-        logo: {
-          src: skillLogos.restLogo,
-          alt: 'REST Logo',
-        },
+        logo: skillLogos.rest,
       },
       {
         key: 'seo',
         skill: 'SEO',
         level: 90,
-        logo: {
-          src: skillLogos.seoLogo,
-          alt: 'SEO Logo',
-        },
+        logo: skillLogos.seo,
       },
       {
         key: 'structured-data',
         skill: 'Structured Data',
         level: 100,
-        logo: {
-          src: skillLogos.structuredDataLogo,
-          alt: 'Structured Data Logo',
-        },
+        logo: skillLogos.structuredData,
       },
       {
         key: 'cross-browser-compatibility',
         skill: 'Cross Browser Compatibility',
         level: 60,
-        logo: {
-          src: skillLogos.crossBrowserLogo,
-          alt: 'Cross Browser Compatibility Logo',
-        },
+        logo: skillLogos.crossBrowser,
       },
     ],
   },
