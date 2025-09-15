@@ -50,7 +50,21 @@ export const projects: IProject[] = [
     key: 'care-club',
     title: 'Care Club',
     excerpt:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae veritatis eius error reiciendis, ipsam ad est? Quaerat, alias vero ipsam placeat consequatur distinctio aliquid dolore voluptatum assumenda eveniet ut?',
+      'Another significant project I have taken over during my time at Rightio has ' +
+      'been the maintenance of the Care Club website, the sister company to Rightio ' +
+      'that overs home emergency plans to cover plumbing and boiler breakdowns. ' +
+      'Initially, the site was built in WordPress, but to bring it up to modern ' +
+      'standards, a React contractor was hired to redevelop the site. The contractor ' +
+      'built the site using Next.js and used Azure DevOps to implement a CI/CD pipeline ' +
+      'then deployed the site to an Azure App Service. After their contract ended, I was ' +
+      'asked to maintain the site and implement updates. In being asked this, I took a ' +
+      'course on React to get a better understanding of how it worked and how best to ' +
+      'maintain the site. Some of the changes I implemented included updating the ' +
+      'language from JavaScript to TypeScript, fixing a number of type related issues ' +
+      'and other bugs the contractor had not picked up on, and updating the purchase ' +
+      'plan form so account registration was done automatically once the customer had ' +
+      'filled in the form instead of manually at the first step as this caused a lot of ' +
+      'customers confusion with them thinking they had a plan when they hadn&apos;t.',
     githubLink: '',
     siteLink: 'https://careclub.co.uk',
     skills: ['React', 'TypeScript', 'Next.js', 'CI/CD Pipelines', '.Net'],
@@ -60,7 +74,15 @@ export const projects: IProject[] = [
     key: 'tantracker',
     title: 'TanTracker - TanStack Start Project',
     excerpt:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae veritatis eius error reiciendis, ipsam ad est? Quaerat, alias vero ipsam placeat consequatur distinctio aliquid dolore voluptatum assumenda eveniet ut?',
+      'This project was built as part of a course I took which taught you how to use ' +
+      'the new framework by TanStack, TansStack Start. The idea behind it is quite ' +
+      'simple, a project designed to allow users to track their expenses over time. ' +
+      'It uses Clerk for account management (allowing the user to sign up and sign in ' +
+      'with their Google account), Neon for database management, Shadcn for common UI ' +
+      'components, Tailwind for styling, React-hook-form with zod for form validity ' +
+      'checking, and vercel for hosting. It should be noted that TanStack Start is still ' +
+      'in beta meaning that whilst this project works currently, aspects of it may have to' +
+      'change in future to fit the latest updates.',
     githubLink: 'https://github.com/ConorCrutchley/tantracker-course',
     siteLink: 'https://tantracker-course-rho.vercel.app/',
     skills: ['TanStack Start', 'React', 'TypeScript', 'Tailwind', 'Shadcn'],
@@ -99,7 +121,20 @@ export const projects: IProject[] = [
     key: 'tribe-post',
     title: 'Tribe Post WordPress Plugin',
     excerpt:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae veritatis eius error reiciendis, ipsam ad est? Quaerat, alias vero ipsam placeat consequatur distinctio aliquid dolore voluptatum assumenda eveniet ut?',
+      'During my time at Recruitive, I created a large number of widgets, WordPress ' +
+      'themes and WordPress plugins for displaying careers on the site. Sadly, it has ' +
+      'been a long time since I worked at Recruitive, som many companies have since ' +
+      'decided to use alternative methods for displaying jobs on their site. One example ' +
+      'of my work that still remains though is Tribe Post. Initially, this recruitment ' +
+      'agency wanted a widget, which was essentially an iframe on the site that displayed ' +
+      'the jobs posted through Recruitive&apos;s multi-posting software, JobMate. However, ' +
+      'they later found out that we could provide them with a WordPress plugin for a more ' +
+      'seamless integration with their site. This WordPress plugin remains on their site ' +
+      'today. Modelled after Total Jobs, the WordPress plugin allowed them not only to ' +
+      'upload jobs, but to also add clients onto their site. Prospective applicants could ' +
+      'then filter through jobs, click on job descriptions and click on client profiles ' +
+      'to see a bit more about the company and what other roles Tribe Post are advertising ' +
+      'for them.',
     githubLink: '',
     siteLink: 'https://www.tribepost.co.uk/jobs/',
     skills: ['WordPress', 'PHP', 'MySQL'],
