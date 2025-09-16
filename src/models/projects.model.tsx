@@ -189,12 +189,9 @@ export const projects: IProject[] = [
         <p>
           During my time at Recruitive, I created a large number of widgets,
           WordPress themes and WordPress plugins for displaying careers on the
-          site. Sadly, it has been a long time since I worked at Recruitive, so
-          many companies have since decided to use alternative methods for
-          displaying jobs on their site.
+          site. One example of my work that is in use is Tribe Post.
         </p>
         <p>
-          One example of my work that still remains though is Tribe Post.
           Initially, this recruitment agency wanted a widget, which was
           essentially an iframe on the site that displayed the jobs posted
           through Recruitive&apos;s multi-posting software, JobMate. However,
