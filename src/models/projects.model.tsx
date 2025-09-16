@@ -95,7 +95,14 @@ export const projects: IProject[] = [
     ),
     githubLink: '',
     siteLink: 'https://careclub.co.uk',
-    skills: ['React', 'TypeScript', 'Next.js', 'CI/CD Pipelines', '.Net'],
+    skills: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'MUI',
+      'CI/CD Pipelines',
+      '.Net',
+    ],
     thumbnail: thumbnails.careclub,
   },
   {
