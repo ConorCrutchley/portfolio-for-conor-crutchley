@@ -6,8 +6,13 @@
     0.4rem 0.4rem 0.5rem 0.25rem var(--lilac);
   border-radius: 0.5rem;
   margin: 2rem 0rem;
-  padding: 2rem;
+  padding: 1.25rem;
 }
 .card h3 {
   margin-top: 0;
+}
+@media (min-width: 900px) {
+  .card {
+    padding: 2rem;
+  }
 }
