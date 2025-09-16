@@ -1,4 +1,5 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import Chip from '@/components/Chip';
 import type { IExperience } from '@/models/experience.model';
 import styles from '@/styles/experience/experience.module.css';
 
@@ -14,7 +15,7 @@ const Experience = ({ experience }: { experience: IExperience }) => {
         <h3>
           {experience.company} - {experience.title}
         </h3>
-        <span className={styles['duration-pill']}>{years} years</span>
+        <Chip text={`${years} years`} />
       </div>
       <ul className={styles['experience-list']}>
         {experience.bullets.map((bullet, i) => (

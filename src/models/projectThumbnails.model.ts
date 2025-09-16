@@ -1,6 +1,6 @@
 import astroThumbnail from '@/assets/project-thumbnails/astro-portfolio-of-faur-katerine.jpg';
 import careclubThumbnail from '@/assets/project-thumbnails/care-club-home-page-with-woman-and-her-grandma-looking-down-at-what-is-provided.jpg';
-import cssArtGalleryThumbnail from '@/assets/project-thumbnails/css-art-gallery-showcasing-homer-simpson-bookshelf-coffee-mug-batman-logo-and-captain-america-shield.jpg';
+import cssArtGalleryThumbnail from '@/assets/project-thumbnails/css-art-gallery-showcasing-homer-simpson-bookshelf-coffee-mug-batman-logo-captain-america-shield-and-pikachu.jpg';
 import fullCircleThumbnail from '@/assets/project-thumbnails/full-circle-martial-arts-home-page.jpg';
 import rightioThumbnail from '@/assets/project-thumbnails/rightio-home-page-showcasing-the-services-provided.jpg';
 import tantrackerThumbnail from '@/assets/project-thumbnails/tantracker-tanstack-start-project-sign-in-page.jpg';
