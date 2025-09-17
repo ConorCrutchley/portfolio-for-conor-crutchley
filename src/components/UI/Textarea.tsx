@@ -1,33 +1,16 @@
-import type { FieldError, UseFormRegisterReturn } from 'react-hook-form';
-
+import type { IInputProps } from '@/models/inputProps.model';
+import InputContainer from '@/components/UI/InputContainer';
 import styles from '@/styles/input.module.css';
 
-const Textarea = ({
-  label,
-  inputProps,
-  error,
-  required = false,
-}: {
-  label: string;
-  inputProps: UseFormRegisterReturn;
-  error: FieldError | undefined;
-  required?: boolean;
-}) => {
+const Textarea = (props: IInputProps) => {
   return (
-    <div className={styles['input-container']}>
-      <label
-        htmlFor={inputProps.name}
-        className={styles['input-label']}
-      >{`${label} ${required ? '*' : ''}`}</label>
+    <InputContainer {...props}>
       <textarea
-        {...inputProps}
-        className={`${styles['input-field']} ${error?.message ? styles['input-field-error'] : ''}`}
+        {...props.inputProps}
+        className={`${styles['input-field']} ${props.error?.message ? styles['input-field-error'] : ''}`}
         rows={10}
       />
-      {error?.message && (
-        <p className={styles['input-error']}>{error?.message}</p>
-      )}
-    </div>
+    </InputContainer>
   );
 };
 
