@@ -10,7 +10,11 @@ const Skill = ({ specificSkill }: { specificSkill: ISpecificSkill }) => {
         : 'Advanced';
   return (
     <div className={`flex flex-column flex-between-center ${styles['skill']}`}>
-      <img {...specificSkill.logo} className={styles['skill-img']} />
+      <img
+        {...specificSkill.logo}
+        className={styles['skill-img']}
+        loading="lazy"
+      />
       <p>{specificSkill.skill}</p>
       <div className={styles['skill-pill']}>
         <div

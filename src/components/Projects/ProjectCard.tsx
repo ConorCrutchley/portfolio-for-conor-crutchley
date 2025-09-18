@@ -11,6 +11,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
         src={project.thumbnail.src}
         alt={project.thumbnail.alt}
         className={styles['project-img']}
+        loading="lazy"
       />
       <h3>{project.title}</h3>
       <div className={`flex ${styles['project-skills']}`}>

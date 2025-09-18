@@ -14,12 +14,14 @@ const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
           className={styles['img-thumbnail']}
           src={certificate.thumbnail.src}
           alt={certificate.thumbnail.alt}
+          loading="lazy"
         />
         <div className={styles['img-platform-container']}>
           <img
             className={styles['img-platform']}
             src={platform.src}
             alt={platform.alt}
+            loading="lazy"
           />
         </div>
       </div>
