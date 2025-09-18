@@ -1,9 +1,5 @@
 .certificate-modal {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   aspect-ratio: 2/1;
   width: 30rem;
   max-width: 100%;
@@ -21,7 +17,11 @@
 }
 .certificate-modal-header,
 .certificate-modal-header-title,
-.modal-button-container {
+.modal-button-container,
+.modal-button > span,
+.modal-button-close::before,
+.modal-button-close::after,
+.certificate-modal .certificate-cards {
   position: absolute;
 }
 .certificate-modal-header {
@@ -53,13 +53,11 @@
   transition: all 0.8s;
 }
 .modal-button > span {
-  position: absolute;
   opacity: 1;
 }
 .modal-button-close::before,
 .modal-button-close::after {
   content: '';
-  position: absolute;
   top: 50%;
   left: 50%;
   background-color: var(--text-color);
@@ -140,8 +138,6 @@
   transform: translate(0, 0);
 }
 .certificate-modal .certificate-cards {
-  position: absolute;
-  display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;

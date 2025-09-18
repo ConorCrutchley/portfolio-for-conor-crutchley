@@ -8,7 +8,7 @@ const Logo = () => {
         src={GlitchBraces}
         alt="curly braces in a blue to violet gradient with a glitch effect"
       />
-      <span className={styles['logo-text']}>CC</span>
+      <span className={`position-center ${styles['logo-text']}`}>CC</span>
     </div>
   );
 };

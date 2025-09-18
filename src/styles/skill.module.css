@@ -1,9 +1,5 @@
 .skill {
-  display: flex;
-  flex-direction: column;
   background-color: var(--mid-translucent-grey);
-  align-items: center;
-  justify-content: space-between;
   row-gap: 0.5rem;
   text-align: center;
   font-size: 0.85rem;

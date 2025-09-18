@@ -1,8 +1,6 @@
 .experience-header {
-  display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-  flex-direction: column;
   align-items: flex-start;
 }
 .experience-list {
@@ -26,7 +24,6 @@
 }
 @media (min-width: 900px) {
   .experience-header {
-    flex-direction: row;
     align-items: center;
   }
   .experience-header h3 {

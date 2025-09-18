@@ -9,7 +9,7 @@ const InputContainer = ({
   required = false,
 }: IInputContainerProps) => {
   return (
-    <div className={styles['input-container']}>
+    <div className="flex flex-column">
       <label
         htmlFor={inputProps.name}
         className={styles['input-label']}

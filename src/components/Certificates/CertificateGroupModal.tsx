@@ -16,9 +16,9 @@ const CertificateGroupModal = ({
   const toggleModal = () => {
     const timeoutDuration = 400;
     setBtnDisabled(true);
-    const step1ClassName = `${styles['certificate-modal']} ${!isOpen ? styles['certificate-modal-transitioning'] : `${styles['certificate-modal-open']} ${styles['certificate-modal-close-start']}`}`;
-    const step2ClassName = `${styles['certificate-modal']} ${styles['certificate-modal-transitioning']}`;
-    const step3ClassName = `${styles['certificate-modal']} ${!isOpen ? styles['certificate-modal-open'] : ''}`;
+    const step1ClassName = `flex flex-column flex-center ${styles['certificate-modal']} ${!isOpen ? styles['certificate-modal-transitioning'] : `${styles['certificate-modal-open']} ${styles['certificate-modal-close-start']}`}`;
+    const step2ClassName = `flex flex-column flex-center ${styles['certificate-modal']} ${styles['certificate-modal-transitioning']}`;
+    const step3ClassName = `flex flex-column flex-center ${styles['certificate-modal']} ${!isOpen ? styles['certificate-modal-open'] : ''}`;
 
     const finalStep = () => {
       setClassNames(step3ClassName);
@@ -58,7 +58,7 @@ const CertificateGroupModal = ({
           </button>
         </div>
       </div>
-      <div className={styles['certificate-cards']}>
+      <div className={`flex ${styles['certificate-cards']}`}>
         {certificateGroup.certificates.map((certificate) => (
           <CertificateCard
             key={`certificate_${certificate.key}`}

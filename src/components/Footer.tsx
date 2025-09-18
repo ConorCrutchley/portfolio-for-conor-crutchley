@@ -4,7 +4,9 @@ import styles from '@/styles/footer.module.css';
 const Footer = () => {
   const today = new Date();
   return (
-    <footer className={styles.footer}>
+    <footer
+      className={`flex flex-column flex-between-center ${styles['footer']}`}
+    >
       <SocialLinks />
       <p>Designed and built by Conor Crutchley &copy; {today.getFullYear()}</p>
     </footer>

@@ -33,7 +33,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -96,7 +95,7 @@ button::before,
   left: 50%;
   background: var(--highlight-gradient);
   z-index: -1;
-  animation: rotate-gradient-background 5s ease-in-out infinite;
+  animation: translate-rotate 5s ease-in-out infinite;
 }
 button::after,
 .button::after {
@@ -126,7 +125,31 @@ button:hover::after,
   justify-content: space-around;
   gap: 2rem;
 }
-@keyframes rotate-gradient-background {
+.flex {
+  display: flex;
+}
+.flex-column,
+.flex-column-to-row {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes translate-rotate {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -149,5 +172,8 @@ button:hover::after,
   section {
     margin: 2rem auto;
     padding: 2rem;
+  }
+  .flex-column-to-row {
+    flex-direction: row;
   }
 }

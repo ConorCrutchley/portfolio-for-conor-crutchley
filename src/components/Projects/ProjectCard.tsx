@@ -6,26 +6,26 @@ import styles from '@/styles/projects/project-card.module.css';
 
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (
-    <Card className={styles['project-card']}>
+    <Card className={`flex flex-column ${styles['project-card']}`}>
       <img
         src={project.thumbnail.src}
         alt={project.thumbnail.alt}
         className={styles['project-img']}
       />
       <h3>{project.title}</h3>
-      <div className={styles['project-skills']}>
+      <div className={`flex ${styles['project-skills']}`}>
         {project.skills.map((skill) => (
           <Chip key={`projects_${project.key}_${skill}`} text={skill} />
         ))}
       </div>
       <div className={styles['project-excerpt']}>{project.excerpt}</div>
-      <div className={styles['project-links']}>
+      <div className={`flex flex-column-to-row ${styles['project-links']}`}>
         {project.githubLink && (
           <a
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`button ${styles['project-link']}`}
+            className={`button flex flex-center ${styles['project-link']}`}
           >
             <img
               src={githubLogo}
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
             href={project.siteLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`button ${styles['project-link']}`}
+            className={`button flex flex-center ${styles['project-link']}`}
           >
             Visit Site
           </a>

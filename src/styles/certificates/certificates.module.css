@@ -1,12 +1,9 @@
 .courses {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
 @media (min-width: 900px) {
   .courses {
-    flex-direction: row;
     justify-content: space-around;
   }
 }

@@ -6,12 +6,12 @@ const ExperienceList = () => {
   return (
     <section id="experience">
       <h2>Experience</h2>
-      <div className={styles['experience-list']}>
-        <div className={styles['experience-list-items']}>
+      <div className="flex">
+        <div className={`flex flex-column ${styles['experience-list-items']}`}>
           {experience.map((xp) => (
             <div
               key={`experience_${xp.key}`}
-              className={styles['experience-list-item']}
+              className={`flex flex-row ${styles['experience-list-item']}`}
             >
               <div className={styles['experience-list-item-bullet']}></div>
               <Experience experience={xp} />

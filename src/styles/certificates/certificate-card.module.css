@@ -1,14 +1,10 @@
 .certificate-card {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   align-items: center;
   width: 100%;
   margin: 0;
 }
 .certificate-images {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 0.25rem;
@@ -30,8 +26,7 @@
   max-width: 100%;
 }
 .certificate-content {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 .certificate-content > p,
 .certificate-content > p:last-of-type {

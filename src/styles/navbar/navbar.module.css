@@ -1,5 +1,4 @@
 .navbar {
-  display: flex;
   justify-content: space-between;
   background-color: var(--dark-translucent-grey);
   position: fixed;
@@ -19,9 +18,6 @@
   transition-delay: 0s;
 }
 .nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   gap: 2rem;
   position: absolute;
@@ -44,7 +40,6 @@
   gap: 2rem;
   text-align: center;
 }
-.nav-links,
 .nav-link-ul:first-of-type:not(:last-of-type) {
   flex-direction: column;
 }
@@ -65,7 +60,6 @@
     height: auto;
     gap: 1.25rem;
   }
-  .nav-links,
   .nav-link-ul:first-of-type:not(:last-of-type) {
     flex-direction: row;
   }

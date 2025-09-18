@@ -8,8 +8,4 @@
 }
 .logo-text {
   font-family: 'Stalinist One', system-ui;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

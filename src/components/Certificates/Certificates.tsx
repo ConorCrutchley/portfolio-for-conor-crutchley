@@ -8,7 +8,7 @@ const Certificates = () => {
     <section id="certificates">
       <h2>Courses</h2>
       <University />
-      <div className={styles['courses']}>
+      <div className={`flex flex-column-to-row ${styles['courses']}`}>
         {certificateGroups.map((certificateGroup) => (
           <CertificateGroupModal
             key={`certificate-group_${certificateGroup.group}`}

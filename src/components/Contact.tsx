@@ -58,7 +58,9 @@ const Contact = () => {
     <section id="contact">
       <h2>Get In Touch</h2>
       {formSubmitted ? (
-        <div className={styles['contact-form-success']}>
+        <div
+          className={`flex flex-column flex-center ${styles['contact-form-success']}`}
+        >
           <h3>Your message was submitted successfully.</h3>
           <p>
             Thank you for taking the time to read through my portfolio and send
@@ -69,10 +71,14 @@ const Contact = () => {
         <form onSubmit={onSubmitHandler} className={styles['contact-form']}>
           {(isLoading || isSubmitting) && (
             <div className={styles['contact-form-submitting']}>
-              <span>{isSubmitting ? 'Submitting' : 'Loading'}...</span>
+              <span className="position-center">
+                {isSubmitting ? 'Submitting' : 'Loading'}...
+              </span>
             </div>
           )}
-          <div className={styles['contact-inputs']}>
+          <div
+            className={`flex flex-column-to-row ${styles['contact-inputs']}`}
+          >
             <Input
               label="Full Name"
               inputProps={register('name')}
@@ -96,7 +102,7 @@ const Contact = () => {
               error={errors.linkedIn}
             />
           </div>
-          <div className={styles['contact-full-width']}>
+          <div className={`flex flex-column ${styles['contact-full-width']}`}>
             <Textarea
               label="Message"
               inputProps={register('message')}

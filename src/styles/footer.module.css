@@ -1,8 +1,4 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--dark-translucent-grey);
   padding: 1rem 1.25rem;
   gap: 1.252rem;

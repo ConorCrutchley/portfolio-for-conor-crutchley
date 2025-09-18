@@ -1,20 +1,13 @@
-.experience-list {
-  display: flex;
-}
-.experience-list-items {
-  display: flex;
-  flex-direction: column;
+.experience-list-items,
+.experience-list-item-bullet {
   position: relative;
 }
 .experience-list-item {
-  display: flex;
-  flex-direction: row;
   gap: 2rem;
 }
 .experience-list-item-bullet {
   height: 100%;
   width: 2rem;
-  position: relative;
 }
 .experience-list-item-bullet::before,
 .experience-list-item-bullet::after {

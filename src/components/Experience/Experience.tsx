@@ -11,7 +11,7 @@ const Experience = ({ experience }: { experience: IExperience }) => {
   const years = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 365));
   return (
     <Card>
-      <div className={styles['experience-header']}>
+      <div className={`flex flex-column-to-row ${styles['experience-header']}`}>
         <h3>
           {experience.company} - {experience.title}
         </h3>

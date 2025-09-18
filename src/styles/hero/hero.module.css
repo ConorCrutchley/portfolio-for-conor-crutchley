@@ -1,13 +1,8 @@
 .hero {
-  display: flex;
   overflow: hidden;
   align-items: center;
-  flex-direction: column;
 }
 @media (min-width: 900px) {
-  .hero {
-    flex-direction: row;
-  }
   .hero-text {
     width: 100%;
   }

@@ -8,8 +8,8 @@ import styles from '@/styles/certificates/certificate-card.module.css';
 const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
   const platform = certificatePlatforms[certificate.platform];
   return (
-    <Card className={styles['certificate-card']}>
-      <div className={styles['certificate-images']}>
+    <Card className={`flex flex-column ${styles['certificate-card']}`}>
+      <div className={`flex flex-column ${styles['certificate-images']}`}>
         <img
           className={styles['img-thumbnail']}
           src={certificate.thumbnail.src}
@@ -23,7 +23,7 @@ const CertificateCard = ({ certificate }: { certificate: ICertificate }) => {
           />
         </div>
       </div>
-      <div className={styles['certificate-content']}>
+      <div className={`flex flex-column ${styles['certificate-content']}`}>
         <div className={styles['certificate-title']}>
           <h4>{certificate.title}</h4>
           <p className={styles['certificate-subtitle']}>

@@ -7,9 +7,11 @@ import { useNavOpenStore } from '@/store/useNavOpenStore';
 const Navbar = () => {
   const { open } = useNavOpenStore();
   return (
-    <nav className={`${styles['navbar']} ${open ? styles['open'] : ''}`}>
+    <nav className={`flex  ${styles['navbar']} ${open ? styles['open'] : ''}`}>
       <Logo />
-      <div className={styles['nav-links']}>
+      <div
+        className={`flex flex-between-center flex-column-to-row ${styles['nav-links']}`}
+      >
         <PageLinks />
         <SocialLinkClipPaths />
         <SocialLinks />

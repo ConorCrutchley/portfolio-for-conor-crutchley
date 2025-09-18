@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div className={styles['project-list']}>
+      <div className={`flex flex-column-to-row ${styles['project-list']}`}>
         {projects.map((project) => (
           <ProjectCard key={`projects_${project.key}`} project={project} />
         ))}

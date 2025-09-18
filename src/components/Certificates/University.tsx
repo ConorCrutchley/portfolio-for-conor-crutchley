@@ -5,7 +5,9 @@ import styles from '@/styles/certificates/university.module.css';
 const University = () => {
   return (
     <Card className={styles['university-card']}>
-      <div className={styles['university-content']}>
+      <div
+        className={`flex flex-column-to-row ${styles['university-content']}`}
+      >
         <img
           src={StaffordshireUniversityLogo}
           alt="Staffordshire University Logo"
