@@ -61,9 +61,9 @@ section p:last-of-type,
 section ul:last-of-type {
   margin-bottom: 0;
 }
-img {
+/* img {
   max-width: 200px;
-}
+} */
 .button {
   display: block;
   text-decoration: none;
