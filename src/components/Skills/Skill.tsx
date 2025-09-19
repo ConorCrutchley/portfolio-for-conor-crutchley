@@ -14,6 +14,8 @@ const Skill = ({ specificSkill }: { specificSkill: ISpecificSkill }) => {
         {...specificSkill.logo}
         className={styles['skill-img']}
         loading="lazy"
+        width={96}
+        height={96}
       />
       <p>{specificSkill.skill}</p>
       <div className={styles['skill-pill']}>

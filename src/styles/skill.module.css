@@ -9,8 +9,8 @@
 }
 .skill-img {
   object-fit: contain;
-  aspect-ratio: 1/1;
   width: 5rem;
+  height: 5rem;
 }
 .skill-pill,
 .skill-pill-fill {
@@ -41,5 +41,6 @@
   }
   .skill-img {
     width: 6rem;
+    height: 6rem;
   }
 }
