@@ -1,5 +1,5 @@
 import Card from '@/components/Card';
-import StaffordshireUniversityLogo from '@/assets/staffordshire-university-square-logo.png';
+import StaffordshireUniversityLogo from '@/assets/staffordshire-university-square-logo.webp';
 import styles from '@/styles/certificates/university.module.css';
 
 /**

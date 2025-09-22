@@ -1,4 +1,4 @@
-import GlitchBraces from '@/assets/portfolio-logo-glitching-braces.png';
+import GlitchBraces from '@/assets/portfolio-logo-glitching-braces.webp';
 import styles from '@/styles/navbar/logo.module.css';
 
 /**
