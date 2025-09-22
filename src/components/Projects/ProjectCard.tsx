@@ -10,6 +10,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
       <img
         src={project.thumbnail.src}
         alt={project.thumbnail.alt}
+        width={686}
         className={styles['project-img']}
         loading="lazy"
       />

@@ -7,9 +7,9 @@
 .project-img {
   position: relative;
   max-width: none;
-  top: -2rem;
-  left: -2rem;
-  width: calc(100% + 4rem);
+  top: -1.25rem;
+  left: -1.25rem;
+  width: calc(100% + 2.5rem);
 }
 .project-skills {
   flex-wrap: wrap;
@@ -31,5 +31,10 @@
 @media (min-width: 900px) {
   .project-card {
     width: calc(50% - 2rem);
+  }
+  .project-img {
+    top: -2rem;
+    left: -2rem;
+    width: calc(100% + 4rem);
   }
 }
