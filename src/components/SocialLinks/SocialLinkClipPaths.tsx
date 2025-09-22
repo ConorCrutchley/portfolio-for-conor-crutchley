@@ -1,3 +1,12 @@
+/**
+ * SocialLinkClipPaths is a component that renders SVG clip paths
+ * for each social link icon. The clip paths are used to create
+ * a mask for the icons, so that they can be filled with the
+ * correct color and gradient. The component is used in the
+ * SocialLinks component to render the social link icons.
+ *
+ * @returns {JSX.Element} A JSX element containing the SVG clip paths.
+ */
 const SocialLinkClipPaths = () => {
   return (
     <svg

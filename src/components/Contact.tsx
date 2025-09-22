@@ -7,10 +7,23 @@ import { useState } from 'react';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
+/**
+ * Contact form component
+ *
+ * This component renders a contact form with fields for
+ * name, email, company, LinkedIn, and message.
+ * When the form is submitted, it will send an email using EmailJS.
+ *
+ * @returns {JSX.Element} The contact form component
+ */
 const Contact = () => {
+  // State for whether the form has been submitted or not
   const [formSubmitted, setFormSubmitted] = useState(false);
+
+  // State for whether there was an error when submitting the form or not
   const [formSubmissionError, setFormSubmissionError] = useState(false);
 
+  // Zod schema for the contact form
   const contactFormSchema = z.object({
     name: z.string().min(1, 'Name is required'),
     email: z.email('Invalid email address'),
@@ -37,8 +50,16 @@ const Contact = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
+  /**
+   * Handle form submission
+   * @param {z.infer<typeof contactFormSchema>} data - The form data
+   * @returns {Promise<void>} A promise that resolves when the form is submitted
+   */
   const onSubmitHandler = handleSubmit(async (data) => {
+    // Clear any previous errors
     if (formSubmissionError) setFormSubmissionError(false);
+
+    // Send email
     const response = await emailjs.send(
       process.env.PUBLIC_EMAILJS_SERVICE_ID,
       process.env.PUBLIC_EMAILJS_TEMPLATE_ID,
@@ -47,8 +68,11 @@ const Contact = () => {
         publicKey: process.env.PUBLIC_EMAILJS_KEY,
       },
     );
+
+    // Handle response
     if (response.status === 200) setFormSubmitted(true);
     else {
+      // Handle error
       console.error(response);
       setFormSubmissionError(true);
     }
@@ -57,6 +81,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <h2>Get In Touch</h2>
+      {/* Success message when form is filled */}
       {formSubmitted ? (
         <div
           className={`flex flex-column flex-center ${styles['contact-form-success']}`}
@@ -68,7 +93,9 @@ const Contact = () => {
           </p>
         </div>
       ) : (
+        // Contact Form
         <form onSubmit={onSubmitHandler} className={styles['contact-form']}>
+          {/* Loading or submitting message */}
           {(isLoading || isSubmitting) && (
             <div className={styles['contact-form-submitting']}>
               <span className="position-center">
@@ -76,6 +103,8 @@ const Contact = () => {
               </span>
             </div>
           )}
+
+          {/* Input fields, half the width of the form */}
           <div
             className={`flex flex-column-to-row ${styles['contact-inputs']}`}
           >
@@ -102,6 +131,8 @@ const Contact = () => {
               error={errors.linkedIn}
             />
           </div>
+
+          {/* Message field and button, full width of the form */}
           <div className={`flex flex-column ${styles['contact-full-width']}`}>
             <Textarea
               label="Message"
@@ -113,6 +144,8 @@ const Contact = () => {
               Send Message
             </button>
           </div>
+
+          {/* Error message */}
           {formSubmissionError && (
             <p className={styles['contact-form-error']}>
               There was an error when trying to submit the form. Don't worry
@@ -131,5 +164,4 @@ const Contact = () => {
     </section>
   );
 };
-
 export default Contact;

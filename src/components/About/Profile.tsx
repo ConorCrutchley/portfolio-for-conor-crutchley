@@ -1,6 +1,10 @@
 import profileImg from '@/assets/conor-crutchley-in-salmon-blazer-and-pink-shirt-with-green-gradient.webp';
 import styles from '@/styles/about/profile.module.css';
 
+/**
+ * A component that displays a profile picture
+ * @returns {JSX.Element} A JSX element representing the profile picture
+ */
 const Profile = () => {
   return (
     <div className={styles['profile']}>

@@ -1,6 +1,22 @@
 import styles from '@/styles/background.module.css';
 
+/**
+ * Background component
+ *
+ * This component renders a repeating pattern of lines
+ * in the background of the page. The pattern is
+ * composed of vertical and horizontal lines of different
+ * opacities.
+ */
 const Background = () => {
+  // Common attributes for patterns that surround the line groups
+  const patternAttr = {
+    width: '800',
+    height: '800',
+    patternUnits: 'userSpaceOnUse',
+  };
+
+  // Common attributes for lines that make up the background
   const verticalLineAttr = {
     width: 3,
     rx: 1.5,
@@ -9,11 +25,9 @@ const Background = () => {
     height: 6,
     rx: 3,
   };
-  const patternAttr = {
-    width: '800',
-    height: '800',
-    patternUnits: 'userSpaceOnUse',
-  };
+
+  // Common attributes for the main rectangles that spread
+  // across the page to fill the background
   const mainRectAttr = {
     width: '100%',
     height: '100%',
@@ -28,6 +42,7 @@ const Background = () => {
       className={styles['background']}
     >
       <defs>
+        {/* Vertical patterns */}
         <pattern
           {...patternAttr}
           id="vertical-opaque-lines"
@@ -100,6 +115,8 @@ const Background = () => {
             />
           </g>
         </pattern>
+
+        {/* Horizontal patterns */}
         <pattern
           {...patternAttr}
           id="horizontal-opaque-lines"

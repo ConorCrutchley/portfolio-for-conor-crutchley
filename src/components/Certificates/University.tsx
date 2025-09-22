@@ -2,6 +2,13 @@ import Card from '@/components/Card';
 import StaffordshireUniversityLogo from '@/assets/staffordshire-university-square-logo.png';
 import styles from '@/styles/certificates/university.module.css';
 
+/**
+ * A component that displays a university's logo and
+ * related information.
+ *
+ * @returns {JSX.Element} - A JSX element representing the
+ * university component.
+ */
 const University = () => {
   return (
     <Card className={styles['university-card']}>

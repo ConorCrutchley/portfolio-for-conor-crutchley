@@ -1,6 +1,13 @@
 import Profile from '@/components/About/Profile';
 import styles from '@/styles/about/about.module.css';
 
+/**
+ * A component that displays information about me, including a profile
+ * picture and a brief description of my experience and skills.
+ *
+ * @returns {JSX.Element} A JSX element representing the about
+ * section.
+ */
 const About = () => {
   return (
     <section id="about">

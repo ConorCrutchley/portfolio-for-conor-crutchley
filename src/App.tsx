@@ -13,6 +13,9 @@ import Navbar from '@/components/Navbar/Navbar';
 import Projects from '@/components/Projects/Projects';
 import Skills from '@/components/Skills/Skills';
 
+/**
+ * The main app component that renders the entire application.
+ */
 const App = () => {
   return (
     <>
