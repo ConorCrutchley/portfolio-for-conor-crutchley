@@ -1,36 +1,151 @@
-# Rsbuild project
+# Portfolio for Conor Crutchley
 
-## Setup
+![Homepage screenshot](readme-assets/portfolio-screen-recording.gif)
 
-Install the dependencies:
+[Live Demo](https://your-domain.com)
 
-```bash
-pnpm install
+A personal portfolio website built to showcase my skills, projects, experience and certifications that have made me the developer I am today.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Build & Deployment](#build--deployment)
+- [Code Quality](#code-quality)
+- [Performance & Accessibility](#performance--accessibility)
+- [Known Issues & Roadmap](#known-issues--roadmap)
+- [Credits](#credits)
+- [Contact](#contact)
+
+---
+
+## Features
+
+- Mobile-first & responsive design
+- Smooth navigation & interactive UI components
+- Animated backgrounds using SVGs, CSS gradients, Clip Paths and CSS transitions and animations
+- Optimized load times
+- SEO meta tags & accessibility best practices
+
+---
+
+## Tech Stack
+
+- **Frontend**: TypeScript / JavaScript, HTML5, CSS3
+- **Build tool**: Rsbuild — version 1.4.13
+- **Styling methodology**: CSS modules
+- **Linting / formatting**: ESLint, Prettier
+- **Hosting / Deployment**: Vercel
+
+---
+
+## Project Structure
+
+```
+/
+├── public/         → static files such as the favicon, images used for open graph and seo schema, and the downloadable CV
+├── src/
+├──|──assets/       → images used in components and models
+├──|──components/
+├──|──models/
+├──|──store/
+├──|──styles/
+├── static/         → just contains index.html used for providing link to favicon, meta tags, seo schema
+├── .prettierignore
+├── .prettierrc
+├── eslint.config.mjs
+├── package.json
+├── rsbuild.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-## Get started
+---
 
-Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
+## Getting Started
 
-```bash
-pnpm dev
-```
+Prerequisites:
 
-Build the app for production:
+- Node.js v24 or higher
+- npm installed globally
 
-```bash
-pnpm build
-```
-
-Preview the production build locally:
+Steps:
 
 ```bash
-pnpm preview
+git clone https://github.com/ConorCrutchley/portfolio-for-conor-crutchley.git
+cd portfolio-for-conor-crutchley
+npm install
+npm run dev # start local dev server
 ```
 
-## Learn more
+---
 
-To learn more about Rsbuild, check out the following resources:
+## Usage
 
-- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
-- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!
+Once running locally, open `http://localhost:3000` in your browser.
+
+---
+
+## Build & Deployment
+
+```bash
+npm run build       # builds optimized production version
+npm run preview     # preview production locally
+```
+
+To deploy, this uses **Vercel**. The deployment steps are: … (if applicable)
+
+---
+
+## Code Quality
+
+- **Linting**: `npm run lint` runs ESLint with config in `eslint.config.mjs`
+- **Formatting**: `prettier` settings in `.prettierrc`, `.prettierignore` etc.
+- Rules:
+  - Components use PascalCase in file names and exported names.
+  - CSS file names, CSS classes, and image file names use kebab-case.
+  - CSS module file names end with module.css.
+  - Model file names end with .model.ts
+  - Variables and other file names use camelCase.
+  - Image file names provide a description of what the image is which can be used for the alt text.
+
+---
+
+## Performance & Accessibility
+
+- Performed audits with Lighthouse
+- Optimized images & fonts
+- Semantic HTML & keyboard navigation support
+- ARIA attributes where needed
+
+---
+
+## Known Issues & Roadmap
+
+- On desktop, the contact link doesn't always get highlighted when scrolled to. This is due to reaching the bottom of the screen preventing the site from recognising the top of the contact form is in view. Need to adjust the calculation made to see the top of the screen.
+- Memory usage can be quite high, especially if the site has been open for a while.
+- Ocassionally, elements that use CSS transforms in animations can appear out of place. This may just be in development though after a large period of time developing.
+- There's currently no toggle for light / dark mode, this could be a feature to add in the future.
+- There's a limit on how many emails can be sent per month for free using email js. Whilst this is a small site and it should be ok, if someone were to spam the form with emails, it could prevent receiving genuine emails when a user fills in the form. Need to put in deterrents to prevent spam and potentially look into other forms of sending the email.
+
+---
+
+## Credits
+
+- Fonts from Google Fonts
+- Inspiration/design ideas from various portfolio sites found on https://github.com/emmabostian/developer-portfolios
+
+---
+
+## Contact
+
+**Conor Crutchley**
+
+- Email: conorc1993@hotmail.co.uk
+- LinkedIn: https://www.linkedin.com/in/conor-crutchley-13446696/
+- GitHub: [@ConorCrutchley](https://github.com/ConorCrutchley)
