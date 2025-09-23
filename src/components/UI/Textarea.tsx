@@ -19,6 +19,7 @@ const Textarea = (props: IInputProps) => {
         {...props.inputProps}
         className={`${styles['input-field']} ${props.error?.message ? styles['input-field-error'] : ''}`}
         rows={10}
+        id={`input-${props.inputProps.name}`}
       />
     </InputContainer>
   );

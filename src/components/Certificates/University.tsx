@@ -18,6 +18,9 @@ const University = () => {
         <img
           src={StaffordshireUniversityLogo}
           alt="Staffordshire University Logo"
+          loading="lazy"
+          width={171}
+          height={180}
         />
         <div>
           <h3>

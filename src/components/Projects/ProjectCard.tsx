@@ -1,7 +1,7 @@
 import Card from '@/components/Card';
 import Chip from '@/components/Chip';
 import type { IProject } from '@/models/projects.model';
-import githubLogo from '@/assets/skill-logos/github-logo.png';
+import githubLogo from '@/assets/skill-logos/github-logo.webp';
 import styles from '@/styles/projects/project-card.module.css';
 
 /**
@@ -52,6 +52,9 @@ const ProjectCard = ({ project }: { project: IProject }) => {
               src={githubLogo}
               alt="GitHub Logo"
               className={styles['github-img']}
+              width={28}
+              height={28}
+              loading="lazy"
             />
             View Repository
           </a>

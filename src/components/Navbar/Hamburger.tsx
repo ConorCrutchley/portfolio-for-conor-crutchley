@@ -16,7 +16,7 @@ const Hamburger = () => {
     <div
       className={`flex flex-center ${styles['hamburger']} ${open ? styles['open'] : ''}`}
     >
-      <button onClick={toggle}>
+      <button onClick={toggle} aria-label="Toggle navigation">
         <span></span>
       </button>
     </div>

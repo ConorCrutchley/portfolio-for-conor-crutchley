@@ -25,7 +25,7 @@ const InputContainer = ({
     <div className="flex flex-column">
       {/* Label */}
       <label
-        htmlFor={inputProps.name}
+        htmlFor={`input-${inputProps.name}`}
         className={styles['input-label']}
       >{`${label} ${required ? '*' : ''}`}</label>
 
