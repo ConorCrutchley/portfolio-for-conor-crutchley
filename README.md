@@ -127,7 +127,6 @@ To deploy, this uses **Vercel**. The deployment steps are: … (if applicable)
 
 ## Known Issues & Roadmap
 
-- On desktop, the contact link doesn't always get highlighted when scrolled to. This is due to reaching the bottom of the screen preventing the site from recognising the top of the contact form is in view. Need to adjust the calculation made to see the top of the screen.
 - Memory usage can be quite high, especially if the site has been open for a while.
 - Ocassionally, elements that use CSS transforms in animations can appear out of place. This may just be in development though after a large period of time developing.
 - There's currently no toggle for light / dark mode, this could be a feature to add in the future.

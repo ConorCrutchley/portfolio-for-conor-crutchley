@@ -25,8 +25,10 @@ const sections = [
  * @returns {JSX.Element} A JSX element representing the page links list.
  */
 const PageLinks = () => {
+  const windowWidth = window.innerWidth;
+
   // Height of the navbar
-  const navbarHeight = 140;
+  const navbarHeight = windowWidth < 900 ? 120 : 150;
 
   // State to track the active section
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -116,7 +118,7 @@ const PageLinks = () => {
 
     // Remove the scroll event listener - clean up
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeSection]);
+  }, [activeSection, navbarHeight]);
 
   return (
     <ul className={`${navStyles['nav-link-ul']} ${styles['page-links']}`}>
