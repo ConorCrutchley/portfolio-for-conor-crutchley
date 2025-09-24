@@ -149,7 +149,7 @@ export const projects: IProject[] = [
       </>
     ),
     githubLink: 'https://github.com/ConorCrutchley/astro-react-and-vue-islands',
-    siteLink: '',
+    siteLink: 'https://astro-portfolio-lemon-ten.vercel.app/',
     skills: ['Astro.js', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
     thumbnail: thumbnails.astro,
   },
@@ -177,7 +177,8 @@ export const projects: IProject[] = [
       </>
     ),
     githubLink: 'https://github.com/ConorCrutchley/css-art-gallery',
-    siteLink: '',
+    siteLink:
+      'https://css-art-gallery-17ui4ssoe-conors-projects-1f2d0b51.vercel.app/',
     skills: ['CSS3', 'HTML5'],
     thumbnail: thumbnails.cssArtGallery,
   },
@@ -241,7 +242,7 @@ export const projects: IProject[] = [
       </>
     ),
     githubLink: 'https://github.com/ConorCrutchley/The-Kata-Dojo',
-    siteLink: '',
+    siteLink: 'https://the-kata-dojo.vercel.app/',
     skills: ['HTML5', 'CSS3', 'JavaScript', 'Cross Browser Compatibility'],
     thumbnail: thumbnails.theKataDojo,
   },
