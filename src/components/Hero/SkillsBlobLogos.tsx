@@ -1,6 +1,5 @@
 import { skills, type SpecificSkillTitles } from '@/models/skills.model';
 import styles from '@/styles/hero/skills-blob-logos.module.css';
-
 /**
  * A component that outputs all of the skill logos to be used in the blob
  * @returns {JSX.Element} A JSX element representing all of the skill logos
@@ -45,7 +44,7 @@ const SkillsBlobLogos = () => {
           id={styles[`blob-skill-logo-${skill.key}`]}
           className={styles['skill-logo']}
         >
-          <img {...skill.logo} />
+          <img {...skill.logo} loading="lazy" />
         </div>
       ))}
     </div>

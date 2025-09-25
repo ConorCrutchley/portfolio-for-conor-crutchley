@@ -1,6 +1,4 @@
 import './App.css';
-import '@fontsource/stalinist-one/index.css';
-import '@fontsource/righteous/index.css';
 
 import About from '@/components/About/About';
 import Background from '@/components/Background';
