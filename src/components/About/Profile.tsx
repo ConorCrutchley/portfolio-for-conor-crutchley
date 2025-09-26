@@ -9,6 +9,7 @@ const Profile = () => {
   return (
     <div className={styles['profile']}>
       <img
+        fetchPriority="high"
         src={profileImg}
         alt="conor crutchley in salmon blazer and pink shirt with green gradient"
         width={410}
