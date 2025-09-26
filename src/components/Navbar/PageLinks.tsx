@@ -111,11 +111,12 @@ const PageLinks = () => {
     <ul className={`${navStyles['nav-link-ul']} ${styles['page-links']}`}>
       {/* Loop through the sections and display the page links */}
       {sections.map((section) => {
+        const displayText = section.charAt(0).toUpperCase() + section.slice(1);
         return (
           <li key={`navbar_pagelink_${section}`}>
             <a
               href={`#${section}`}
-              data-text={section}
+              data-text={displayText}
               className={activeSection === section ? styles['active'] : ''}
               onClick={(e) => {
                 // Prevent the default behavior of the link
@@ -124,7 +125,7 @@ const PageLinks = () => {
                 onClickHandler(section);
               }}
             >
-              {section}
+              {displayText}
             </a>
           </li>
         );

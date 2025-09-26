@@ -2,7 +2,6 @@
   color: var(--text-color);
   text-decoration: none;
   position: relative;
-  text-transform: capitalize;
   transition: color 0.3s;
 }
 .page-links a::before {
@@ -19,7 +18,6 @@
 }
 .page-links a::after {
   content: attr(data-text);
-  text-transform: capitalize;
   position: absolute;
   top: 2px;
   left: 0;
@@ -32,7 +30,6 @@
 .page-links a:hover,
 .page-links a.active {
   color: transparent;
-  text-transform: capitalize;
 }
 .page-links a:hover::after,
 .page-links a.active::after {
