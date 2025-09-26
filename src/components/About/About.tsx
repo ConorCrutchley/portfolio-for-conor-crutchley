@@ -1,4 +1,5 @@
 import Profile from '@/components/About/Profile';
+import { scrollToSection } from '@/utils/scrollToSection';
 import styles from '@/styles/about/about.module.css';
 
 /**
@@ -32,7 +33,7 @@ const About = () => {
         </div>
         <div className={`flex flex-column ${styles['about-profile']}`}>
           <Profile />
-          <button>Contact Me</button>
+          <button onClick={() => scrollToSection('contact')}>Contact Me</button>
         </div>
       </div>
     </section>

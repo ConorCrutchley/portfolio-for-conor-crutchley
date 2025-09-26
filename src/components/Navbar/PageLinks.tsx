@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import navStyles from '@/styles/navbar/navbar.module.css';
+import { scrollToSection } from '@/utils/scrollToSection';
 import styles from '@/styles/navbar/page-links.module.css';
 import { useNavOpenStore } from '@/store/useNavOpenStore';
 
@@ -41,24 +42,10 @@ const PageLinks = () => {
    *
    * @param {string} section - The ID of the section to scroll to
    */
-  const scrollToSection = (section: string) => {
-    // Get the section element
-    const sectionElem = document.getElementById(section);
-
-    // If the element doesn't exist, return
-    if (!sectionElem) return;
-
+  const onClickHandler = (section: string) => {
+    scrollToSection(section);
     // If the navigation menu is open, toggle it
     if (open) toggle();
-
-    // Calculate the top position of the section
-    const scrollTo = sectionElem.offsetTop - navbarHeight;
-
-    // Scroll to the calculated position
-    window.scrollTo({
-      top: scrollTo,
-      behavior: 'smooth',
-    });
   };
 
   useEffect(() => {
@@ -134,7 +121,7 @@ const PageLinks = () => {
                 // Prevent the default behavior of the link
                 // and scroll to the section
                 e.preventDefault();
-                scrollToSection(section);
+                onClickHandler(section);
               }}
             >
               {section}
