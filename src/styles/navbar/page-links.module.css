@@ -32,6 +32,7 @@
 .page-links a:hover,
 .page-links a.active {
   color: transparent;
+  text-transform: capitalize;
 }
 .page-links a:hover::after,
 .page-links a.active::after {
