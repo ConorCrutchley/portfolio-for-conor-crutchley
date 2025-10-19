@@ -12,6 +12,7 @@ import UdemyAstroThumbnail from '@/assets/course-thumbnails/udemy/udemy-astro-th
 import UdemyCSSDrawingThumbnail from '@/assets/course-thumbnails/udemy/udemy-css-drawing-course-thumbnail.webp';
 import UdemyCleanCodeThumbnail from '@/assets/course-thumbnails/udemy/udemy-clean-code-course-thumbnail.webp';
 import UdemyDesignRulesThumbnail from '@/assets/course-thumbnails/udemy/udemy-design-rules-thumbnail.webp';
+import UdemyGSAPAnimationThumbnail from '@/assets/course-thumbnails/udemy/udemy-gsap-animation-masterclass.webp';
 import UdemyGatsbyThumbnail from '@/assets/course-thumbnails/udemy/udemy-gatsby-course-thumbnail.webp';
 import UdemyGitHubActionsThumbnail from '@/assets/course-thumbnails/udemy/udemy-github-actions-course-thumbnail.webp';
 import UdemyLogo from '@/assets/udemy-logo.webp';
@@ -144,6 +145,21 @@ export const certificateGroups: ICertificateGroup[] = [
         thumbnail: {
           src: UdemyCSSDrawingThumbnail,
           alt: 'CSS drawings of Homer Simpson, watermelon and coffee mug',
+        },
+      },
+      {
+        key: 'gsap-animation-masterclass',
+        title: 'GSAP Animation Masterclass',
+        subtitle: 'Master Web Animations With Ease',
+        provider: 'Jayanta Sarkar',
+        platform: 'udemy',
+        courseLink:
+          'https://www.udemy.com/course/gsap-animation-masterclass/?couponCode=PMNVD2525',
+        certificateLink:
+          'https://www.udemy.com/certificate/UC-51b64cc4-c003-4d78-a3a5-35efdf1b2d47/',
+        thumbnail: {
+          src: UdemyGSAPAnimationThumbnail,
+          alt: 'Super hero wearing one green sock representing GSAP',
         },
       },
       {
