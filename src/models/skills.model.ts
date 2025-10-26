@@ -28,6 +28,7 @@ export type SpecificSkillTitles =
   | 'Gatsby.js'
   | 'Git'
   | 'GitHub/GitHub Actions'
+  | 'GSAP'
   | 'HTML5'
   | 'JavaScript'
   | 'Lighthouse'
@@ -123,8 +124,14 @@ export const skills: ISkill[] = [
       {
         key: 'tailwind',
         skill: 'Tailwind',
-        level: 25,
+        level: 30,
         logo: skillLogos.tailwind,
+      },
+      {
+        key: 'gsap',
+        skill: 'GSAP',
+        level: 25,
+        logo: skillLogos.gsap,
       },
     ],
   },

@@ -25,6 +25,9 @@
 .project-link {
   gap: 0.5rem;
 }
+.project-card a:not(.project-link) {
+  color: var(--lilac);
+}
 .github-img {
   max-width: 2rem;
 }

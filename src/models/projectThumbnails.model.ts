@@ -2,6 +2,7 @@ import astroThumbnail from '@/assets/project-thumbnails/astro-portfolio-of-faur-
 import careclubThumbnail from '@/assets/project-thumbnails/care-club-home-page-with-woman-and-her-grandma-looking-down-at-what-is-provided.webp';
 import cssArtGalleryThumbnail from '@/assets/project-thumbnails/css-art-gallery-showcasing-homer-simpson-bookshelf-coffee-mug-batman-logo-captain-america-shield-and-pikachu.webp';
 import fullCircleThumbnail from '@/assets/project-thumbnails/full-circle-martial-arts-home-page.webp';
+import gsapCocktailThumbnail from '@/assets/project-thumbnails/gsap-cocktail-site-displaying-mojito.webp';
 import rightioThumbnail from '@/assets/project-thumbnails/rightio-home-page-showcasing-the-services-provided.webp';
 import tantrackerThumbnail from '@/assets/project-thumbnails/tantracker-tanstack-start-project-sign-in-page.webp';
 import theKataDojoThumbnail from '@/assets/project-thumbnails/the-kata-dojo-home-page.webp';
@@ -39,5 +40,9 @@ export const thumbnails = {
   theKataDojo: {
     src: theKataDojoThumbnail,
     alt: 'the kata dojo home page',
+  },
+  gsapCocktailThumbnail: {
+    src: gsapCocktailThumbnail,
+    alt: 'gsap cocktail site displaying mojito',
   },
 };

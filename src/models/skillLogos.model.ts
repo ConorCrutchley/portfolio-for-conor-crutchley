@@ -11,6 +11,7 @@ import entityFrameworkLogo from '@/assets/skill-logos/entity-framework.webp';
 import gatsbyLogo from '@/assets/skill-logos/gastby-icon.webp';
 import gitLogo from '@/assets/skill-logos/git-logo.webp';
 import githubLogo from '@/assets/skill-logos/github-logo.webp';
+import gsapLogo from '@/assets/skill-logos/gsap.webp';
 import htmlLogo from '@/assets/skill-logos/html5-logo.webp';
 import jsLogo from '@/assets/skill-logos/javascript-logo.webp';
 import lighthouseLogo from '@/assets/skill-logos/google-lighthouse-logo.webp';
@@ -84,6 +85,10 @@ export const skillLogos = {
   github: {
     src: githubLogo,
     alt: 'GitHub logo',
+  },
+  gsap: {
+    src: gsapLogo,
+    alt: 'GSAP logo',
   },
   html: {
     src: htmlLogo,

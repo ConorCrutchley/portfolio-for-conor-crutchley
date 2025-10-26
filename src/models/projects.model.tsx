@@ -154,6 +154,60 @@ export const projects: IProject[] = [
     thumbnail: thumbnails.astro,
   },
   {
+    key: 'gsap-cocktail',
+    title: 'GSAP Cocktail',
+    excerpt: (
+      <>
+        <p>
+          The GSAP Cocktail site is a project I built whilst following along the
+          Web Animations Full Course from JavaScript Mastery which can be found
+          on YouTube at{' '}
+          <a
+            href="https://www.youtube.com/watch?v=AW1yfBKRMKc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.youtube.com/watch?v=AW1yfBKRMKc
+          </a>
+          .
+        </p>
+        <p>
+          The site is designed to advertise a bar using animations powered by
+          the Green Sock Animation Platform (aka GSAP). In this project it was
+          used to:
+        </p>
+        <ul>
+          <li>
+            Play the video of ice falling into a cocktail glass as the user
+            scrolls
+          </li>
+          <li>Add a paralax effect to the leaves on the screen</li>
+          <li>
+            Fade words, characters and lines into view as the user enters
+            different sections of the page
+          </li>
+          <li>
+            Add an image mask that expands into a full image when the user
+            scrolls further down the page
+          </li>
+          <li>
+            Provide transitions when navigating from one cocktail to another in
+            the menu section
+          </li>
+        </ul>
+        <p>
+          The project offers just a taster of what GSAP can do. I aim to create
+          more projects like this and expand my understanding of GSAP and my
+          portfolio.
+        </p>
+      </>
+    ),
+    githubLink: 'https://github.com/ConorCrutchley/gsap-cocktail',
+    siteLink: 'https://gsap-cocktail-six-snowy.vercel.app/',
+    skills: ['React', 'GSAP', 'Tailwind', 'JavaScript', 'TypeScript'],
+    thumbnail: thumbnails.gsapCocktailThumbnail,
+  },
+  {
     key: 'css-art-gallery',
     title: 'CSS Art Gallery',
     excerpt: (
