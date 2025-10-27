@@ -26,7 +26,7 @@ const SkillsBlobLogos = () => {
     'SQL',
     'PHP',
     'Tailwind', // Only displayed after 900px
-    'Astro.js', // Only displayed after 1180px
+    'GSAP', // Only displayed after 1180px
   ];
 
   // Get all of the skill logos

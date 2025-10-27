@@ -336,7 +336,7 @@
     top: 21%;
     left: 53%;
   }
-  #blob-skill-logo-astro-js {
+  #blob-skill-logo-gsap {
     top: 47%;
     left: 47%;
     animation-name: var(--skill-animation), skill-to-left-down-anticlockwise;
