@@ -25,7 +25,7 @@ export const experience: IExperience[] = [
           component-based system
         </strong>{' '}
         to streamline responsive, accessible layouts across all devices and
-        browsers boost scalability. This{' '}
+        browsers, and boost scalability. This{' '}
         <strong className={styles['strong-figure']}>
           increased visitors and user engagement by 20%
         </strong>
