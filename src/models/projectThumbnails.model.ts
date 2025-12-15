@@ -3,6 +3,7 @@ import careclubThumbnail from '@/assets/project-thumbnails/care-club-home-page-w
 import cssArtGalleryThumbnail from '@/assets/project-thumbnails/css-art-gallery-showcasing-homer-simpson-bookshelf-coffee-mug-batman-logo-captain-america-shield-and-pikachu.webp';
 import fullCircleThumbnail from '@/assets/project-thumbnails/full-circle-martial-arts-home-page.webp';
 import gsapCocktailThumbnail from '@/assets/project-thumbnails/gsap-cocktail-site-displaying-cocktail-and-velvet-pour-wording.webp';
+import gsapEasingThumbnail from '@/assets/project-thumbnails/gsap-easing-site-showing-red-box-on-screen-ready-to-be-animated-by-the-filters-available-and-the-gsap-code-for-the-animation.webp';
 import rightioThumbnail from '@/assets/project-thumbnails/rightio-home-page-showcasing-the-services-provided.webp';
 import tantrackerThumbnail from '@/assets/project-thumbnails/tantracker-tanstack-start-project-sign-in-page.webp';
 import theKataDojoThumbnail from '@/assets/project-thumbnails/the-kata-dojo-home-page.webp';
@@ -44,5 +45,9 @@ export const thumbnails = {
   gsapCocktailThumbnail: {
     src: gsapCocktailThumbnail,
     alt: 'gsap cocktail site displaying cocktail and velvet pour wording',
+  },
+  gsapEasingThumbnail: {
+    src: gsapEasingThumbnail,
+    alt: 'gsap easing site showing red box on screen ready to be animated by the filters available and the gsap code for the animation',
   },
 };

@@ -106,52 +106,40 @@ export const projects: IProject[] = [
     thumbnail: thumbnails.careclub,
   },
   {
-    key: 'tantracker',
-    title: 'TanTracker - TanStack Start Project',
+    key: 'gsap-easing',
+    title: 'GSAP Easing',
     excerpt: (
       <>
         <p>
-          This project was built as part of a course I took which taught you how
-          to use the new framework by TanStack, TanStack Start. The idea behind
-          it is quite simple, a project designed to allow users to track their
-          expenses over time.
+          I recently began learning about GSAP and one of the things I struggled
+          to get my around was the different types of easing that GSAP offers.
+          There are quite a few different easing types that effect how an
+          element is animated differently, and I felt that whilst the courses I
+          had done briefly touched on the easing types, to truly understand
+          them, I would need to build a project that explains them. That way, I
+          could learn about them and refer back to the project in future if I
+          ever got stuck again.
         </p>
         <p>
-          It uses Clerk for account management (allowing the user to sign up and
-          sign in with their Google account), Neon for database management,
-          Shadcn for common UI components, Tailwind for styling, React-hook-form
-          with zod for form validity checking, and vercel for hosting.
+          This project aims to explain the different easing types that can be
+          used in GSAP. The user can choose various filters which will change
+          update the how a red box is animated. A description of the easing type
+          that is selected is provided which goes into what happens, how it
+          feels and in what use cases you would use that particular easing type.
+          There is also the option to copy the code produced by the filters to
+          create the animation.
         </p>
         <p>
-          It should be noted that TanStack Start is still in beta meaning that
-          whilst this project works currently, aspects of it may have tochange
-          in future to fit the latest updates.
+          As I learn more about GSAP, I aim to improve this project and provide
+          alternative ways for the user to see and understand the various easing
+          types available in GSAP.
         </p>
       </>
     ),
-    githubLink: 'https://github.com/ConorCrutchley/tantracker-course',
-    siteLink: 'https://tantracker-course-rho.vercel.app/',
-    skills: ['TanStack Start', 'React', 'TypeScript', 'Tailwind', 'Shadcn'],
-    thumbnail: thumbnails.tantracker,
-  },
-  {
-    key: 'astro-portfolio',
-    title: 'Astro Portfolio',
-    excerpt: (
-      <>
-        <p>
-          The Astro portfolio is a project I built whilst following along the
-          AstroJS 101: Build Blazing Fast Frondends! course on Udemy. The
-          project covers the basics of Astro.js including Astro components,
-          setting up pages with both components and markdown, and how best to
-          style and script components within Astro.
-        </p>
-      </>
-    ),
-    githubLink: 'https://github.com/ConorCrutchley/astro-react-and-vue-islands',
-    siteLink: 'https://astro-portfolio-lemon-ten.vercel.app/',
-    skills: ['Astro.js', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
-    thumbnail: thumbnails.astro,
+    githubLink: 'https://github.com/ConorCrutchley/gsap-easing',
+    siteLink: 'https://gsap-easing.vercel.app/',
+    skills: ['GSAP', 'TypeScript', 'React'],
+    thumbnail: thumbnails.gsapEasingThumbnail,
   },
   {
     key: 'gsap-cocktail',
@@ -206,6 +194,54 @@ export const projects: IProject[] = [
     siteLink: 'https://gsap-cocktail-six-snowy.vercel.app/',
     skills: ['React', 'GSAP', 'Tailwind', 'JavaScript', 'TypeScript'],
     thumbnail: thumbnails.gsapCocktailThumbnail,
+  },
+  {
+    key: 'tantracker',
+    title: 'TanTracker - TanStack Start Project',
+    excerpt: (
+      <>
+        <p>
+          This project was built as part of a course I took which taught you how
+          to use the new framework by TanStack, TanStack Start. The idea behind
+          it is quite simple, a project designed to allow users to track their
+          expenses over time.
+        </p>
+        <p>
+          It uses Clerk for account management (allowing the user to sign up and
+          sign in with their Google account), Neon for database management,
+          Shadcn for common UI components, Tailwind for styling, React-hook-form
+          with zod for form validity checking, and vercel for hosting.
+        </p>
+        <p>
+          It should be noted that TanStack Start is still in beta meaning that
+          whilst this project works currently, aspects of it may have tochange
+          in future to fit the latest updates.
+        </p>
+      </>
+    ),
+    githubLink: 'https://github.com/ConorCrutchley/tantracker-course',
+    siteLink: 'https://tantracker-course-rho.vercel.app/',
+    skills: ['TanStack Start', 'React', 'TypeScript', 'Tailwind', 'Shadcn'],
+    thumbnail: thumbnails.tantracker,
+  },
+  {
+    key: 'astro-portfolio',
+    title: 'Astro Portfolio',
+    excerpt: (
+      <>
+        <p>
+          The Astro portfolio is a project I built whilst following along the
+          AstroJS 101: Build Blazing Fast Frondends! course on Udemy. The
+          project covers the basics of Astro.js including Astro components,
+          setting up pages with both components and markdown, and how best to
+          style and script components within Astro.
+        </p>
+      </>
+    ),
+    githubLink: 'https://github.com/ConorCrutchley/astro-react-and-vue-islands',
+    siteLink: 'https://astro-portfolio-lemon-ten.vercel.app/',
+    skills: ['Astro.js', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
+    thumbnail: thumbnails.astro,
   },
   {
     key: 'css-art-gallery',
