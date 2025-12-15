@@ -231,8 +231,7 @@ export const projects: IProject[] = [
       </>
     ),
     githubLink: 'https://github.com/ConorCrutchley/css-art-gallery',
-    siteLink:
-      'https://css-art-gallery-17ui4ssoe-conors-projects-1f2d0b51.vercel.app/',
+    siteLink: 'https://css-art-gallery-three.vercel.app/',
     skills: ['CSS3', 'HTML5'],
     thumbnail: thumbnails.cssArtGallery,
   },
